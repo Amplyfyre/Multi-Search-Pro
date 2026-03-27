@@ -15,13 +15,13 @@ After arranging websites/groups and checking/unchecking boxes, you have the abil
 
 Not just any website will work simply because they have a search option. In order for a website to function on Multi-Search Pro, the words that you input into a search must translate somewhere within the URL of the website, for example: “search.brave.com/search?q=groceries”.
 In order to customize Multi-Search Pro to include a new website:
-    • Determine that your search terms are visible within the URL 
-    • Replace only the search terms in the URL with %s, leave everything else as is 
-    • Copy the URL 
-    • Determine the group that the website belongs in (create a new one at the top) 
-    • Scroll to the bottom of the group, find the input fields labeled “Engine name” and “URL with %s” 
-    • Name the website in the “Engine name” field, then paste the URL in the “URL with %s” 
-    • Click “Add” 
+• Determine that your search terms are visible within the URL 
+• Replace only the search terms in the URL with %s, leave everything else as is 
+• Copy the URL 
+• Determine the group that the website belongs in (create a new one at the top) 
+• Scroll to the bottom of the group, find the input fields labeled “Engine name” and “URL with %s” 
+• Name the website in the “Engine name” field, then paste the URL in the “URL with %s” 
+• Click “Add” 
 
 You may find that some websites complicate this process by unnecessarily re-writing URLs to keep them “clean”. Startpage is a glaring example, but thankfully there is a hidden way to utilize the %s process with Startpage to get it to work in Multi-Search Pro. Unfortunately, there are websites where, regardless of if the function is present, there may be a paywall or login requirement in order to run a search, which causes the %s process to rupture, and you will have to either be logged in/signed up in order to utilize it within Multi-Search Pro. I’ve skipped on these websites for the most part, but if you regularly utilize a website like this, I encourage you to add it in, just remember that you need to already be logged in to those websites on your browser in order for the searches to work.
 
