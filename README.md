@@ -38,4 +38,4 @@ You may notice a category called “Skip to Page 4”. One thing I have learned 
 
 The extension package is available for any Chromium-based browser that allows the loading of packed extension files. Because Mozilla Firefox requires add-ons to be verified before they are allowed to be imported, Multi-Search Pro’s XPI file only works on Mozilla-based alternatives that do not have this requirement, like LibreWolf (which in my opinion is a much better browser).
 
-If something isn’t working correctly, or you have recommendations to help improve Multi-Search Pro, please let me know. I can’t promise to attend to every request, but consider me open to all feedback regardless.
+If something isn’t working correctly, or you have recommendations to help improve Multi-Search Pro, please let me know with this feedback form, https://forms.gle/XdqeCRZMmc3BqsnX9 . I can’t promise to attend to every request, but consider me open to all feedback regardless. If you want to leave a tip as a thank you, my Ko-fi is https://ko-fi.com/aamplifyre , you certainly do not have to but it would be heavily appreciated.
