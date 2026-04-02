@@ -1,7 +1,7 @@
 // This is part of the code in background.js for the list of websites provided by default. It is not the complete code.
 // This is so you can check to see if anything has been added/changed to the list since you installed it, in case you are interested in discovering new websites and tools.
 // The only difference between the Chromium and Mozilla versions is that one has the Chrome Web Store in Media/Miscellaneous, the other has Mozilla Add-ons,
-// "https://addons.mozilla.org/en-US/firefox/search/q=%s"
+// "https://addons.mozilla.org/en-US/firefox/search/q=%s" },
 
 
 const DEFAULTS = (function () {
