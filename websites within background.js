@@ -1,3 +1,9 @@
+// This is the list of websites inside the code of background.js, it is not the full code.
+// This is to keep up with the updated list of websites in case I have added new ones since you last downloaded it.
+// This list relates to the Chromium version, but the only difference with the Mozilla version is their respective browser extension search pages.
+// { id: "m1",  name: "Mozilla Add-ons",              url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
+
+
 const DEFAULTS = (function () {
   const general = [
     { id: "g1",  name: "DuckDuckGo",            url: "https://duckduckgo.com/?q=%s" },
@@ -31,7 +37,6 @@ const DEFAULTS = (function () {
     { id: "g26", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
     { id: "g27", name: "Qwant",                 url: "https://www.qwant.com/?q=%s" },
     { id: "g28", name: "Yandex",                url: "https://www.yandex.com/search/?text=%s" }
-
   ];
 
   const images = [
@@ -40,7 +45,7 @@ const DEFAULTS = (function () {
     { id: "im3", name: "Wikimedia Images",       url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=image" },
     { id: "im4", name: "Tumblr Images",          url: "https://www.tumblr.com/search/%s?postTypes=gif%2Cphoto&src=typed_query" },
     { id: "im5", name: "Giphy",                  url: "https://giphy.com/search/%s" },
-	  { id: "im6", name: "Tenor",                  url: "https://tenor.com/en-GB/search/%s-gifs" },
+	{ id: "im6", name: "Tenor",                  url: "https://tenor.com/en-GB/search/%s-gifs" },
     { id: "im7", name: "Scrolller",              url: "https://scrolller.com/r/%s" },
 
     { id: "im8",  name: "DuckDuckGo Img",        url: "https://duckduckgo.com/?q=%s&iax=images&ia=images" },
@@ -135,20 +140,20 @@ const DEFAULTS = (function () {
     { id: "b2",  name: "Manybooks",               url: "https://manybooks.net/search-book?search=%s" },
     { id: "b3",  name: "Z-Library",               url: "https://z-library.co/s/%s" },
     { id: "b4",  name: "ReadAnyBook",             url: "https://www.readanybook.com/search?q=%s" },
-	  { id: "b5",  name: "Internet Archive Texts",  url: "https://archive.org/details/texts?query=%s" },
+	{ id: "b5",  name: "Internet Archive Texts",  url: "https://archive.org/details/texts?query=%s" },
     { id: "b6",  name: "Anna’s Archive",          url: "https://annas-archive.gl/search?q=%s" },
     { id: "b7",  name: "WeLib",                   url: "https://welib.org/search?q=%s" },
 
-	  { id: "b8",  name: "AnyFlip",                 url: "https://anyflip.com/explore?q=%s" },
-	  { id: "b9",  name: "Project Gutenberg",       url: "https://www.gutenberg.org/ebooks/search/?query=%s" },
+	{ id: "b8",  name: "AnyFlip",                 url: "https://anyflip.com/explore?q=%s" },
+	{ id: "b9",  name: "Project Gutenberg",       url: "https://www.gutenberg.org/ebooks/search/?query=%s" },
     { id: "b10", name: "Scribd",                  url: "https://www.scribd.com/search?query=%s" },
-	  { id: "b11", name: "OneMoreLibrary",          url: "https://onemorelibrary.com/index.php/en/search-results?se=1&search=%s" },
-	  { id: "b12", name: "Chest of Books",          url: "https://chestofbooks.com/search.html?cx=000348145676127462126%3Anjhvjbiv4do&q=%s" },
-	  { id: "b13", name: "OceanofPDF",              url: "https://oceanofpdf.com/?s=%s" },
+	{ id: "b11", name: "OneMoreLibrary",          url: "https://onemorelibrary.com/index.php/en/search-results?se=1&search=%s" },
+	{ id: "b12", name: "Chest of Books",          url: "https://chestofbooks.com/search.html?cx=000348145676127462126%3Anjhvjbiv4do&q=%s" },
+	{ id: "b13", name: "OceanofPDF",              url: "https://oceanofpdf.com/?s=%s" },
     { id: "b14", name: "PDF Drive",               url: "https://www.pdfdrive.com/?s=%s" },
 
     { id: "b15", name: "Google Books",            url: "https://www.google.com/search?udm=36&q=%s" },
-	  { id: "b16", name: "PublicLiterature.org",    url: "https://publicliterature.org/?s=%s" },
+	{ id: "b16", name: "PublicLiterature.org",    url: "https://publicliterature.org/?s=%s" },
     { id: "b17", name: "RefSeek",                 url: "https://www.refseek.com/documents?q=%s" },
     { id: "b18", name: "Manuals Directory",       url: "https://www.manualsdir.com/search.html?q=%s" },
     { id: "b19", name: "Manualzz",                url: "https://manualzz.com/search/?q=%s" },
@@ -157,15 +162,15 @@ const DEFAULTS = (function () {
 
   const news = [
     { id: "n1",  name: "NPR",                    url: "https://www.npr.org/search?query=%s" },
-	  { id: "n2",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+	{ id: "n2",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
     { id: "n3",  name: "Ecosia News",            url: "https://www.ecosia.org/news?q=%s" },
     { id: "n4",  name: "Lilo News",              url: "https://search.lilo.org/?t=news&q=%s&drawer=settings&locale=en_US" },
     { id: "n5",  name: "OceanHero News",         url: "https://oceanhero.today/news?q=%s" },
     { id: "n6",  name: "Dogpile News",           url: "https://www.dogpile.com/serp?qc=news&q=%s" },
-	  { id: "n7",  name: "NewsLibrary",            url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" },
+	{ id: "n7",  name: "NewsLibrary",            url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" },
 
     { id: "n8",  name: "DuckDuckGo News",        url: "https://duckduckgo.com/?q=%s&ia=news&iar=news" },
-	  { id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
+	{ id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
     { id: "n10", name: "Associated Press",       url: "https://apnews.com/search?q=%s" },
     { id: "n11", name: "Reuters",                url: "https://www.reuters.com/site-search/?query=%s" },
     { id: "n12", name: "Flipboard",              url: "https://flipboard.com/topic/%s" }
