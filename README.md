@@ -3,7 +3,7 @@ It is recommended that someone doing an online search refers to more than one so
 
 Looking for the best prices? Check every shopping website all at the same time. Looking for the perfect photograph? Check all of the photography websites all at the same time. Trying to find the best recipe for a meal? Check every recipe website all at the same time.
 
-This concept went beyond what I was even searching for. But the most importan detail that I could never seem to find in these tools was the "all at the same time" aspect. So I finally decided to make what I’ve always imagined, and kept working at it until it was exactly what I always wanted.
+This concept went beyond what I was even searching for. But, even with SearchSK, the most important detail that I could never seem to find in these tools was the "all at the same time" aspect. So I finally decided to make what I’ve always imagined, and kept working at it until it was exactly what I always wanted.
 
 200+ websites, sorted into “groups” that categorize the scope of research you're looking in to (search engines, images, news, shopping, etc). Pretty much any website that translates your search terms somewhere within the URL, can be added to Multi-Search Pro.
 
