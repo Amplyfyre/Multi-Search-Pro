@@ -37,6 +37,7 @@ const DEFAULTS = (function () {
     { id: "g26", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
     { id: "g27", name: "Qwant",                 url: "https://www.qwant.com/?q=%s" },
     { id: "g28", name: "Yandex",                url: "https://www.yandex.com/search/?text=%s" }
+
   ];
 
   const images = [
@@ -45,7 +46,7 @@ const DEFAULTS = (function () {
     { id: "im3", name: "Wikimedia Images",       url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=image" },
     { id: "im4", name: "Tumblr Images",          url: "https://www.tumblr.com/search/%s?postTypes=gif%2Cphoto&src=typed_query" },
     { id: "im5", name: "Giphy",                  url: "https://giphy.com/search/%s" },
-	{ id: "im6", name: "Tenor",                  url: "https://tenor.com/en-GB/search/%s-gifs" },
+	  { id: "im6", name: "Tenor",                  url: "https://tenor.com/en-GB/search/%s-gifs" },
     { id: "im7", name: "Scrolller",              url: "https://scrolller.com/r/%s" },
 
     { id: "im8",  name: "DuckDuckGo Img",        url: "https://duckduckgo.com/?q=%s&iax=images&ia=images" },
@@ -140,20 +141,20 @@ const DEFAULTS = (function () {
     { id: "b2",  name: "Manybooks",               url: "https://manybooks.net/search-book?search=%s" },
     { id: "b3",  name: "Z-Library",               url: "https://z-library.co/s/%s" },
     { id: "b4",  name: "ReadAnyBook",             url: "https://www.readanybook.com/search?q=%s" },
-	{ id: "b5",  name: "Internet Archive Texts",  url: "https://archive.org/details/texts?query=%s" },
+	  { id: "b5",  name: "Internet Archive Texts",  url: "https://archive.org/details/texts?query=%s" },
     { id: "b6",  name: "Anna’s Archive",          url: "https://annas-archive.gl/search?q=%s" },
     { id: "b7",  name: "WeLib",                   url: "https://welib.org/search?q=%s" },
 
-	{ id: "b8",  name: "AnyFlip",                 url: "https://anyflip.com/explore?q=%s" },
-	{ id: "b9",  name: "Project Gutenberg",       url: "https://www.gutenberg.org/ebooks/search/?query=%s" },
+	  { id: "b8",  name: "AnyFlip",                 url: "https://anyflip.com/explore?q=%s" },
+	  { id: "b9",  name: "Project Gutenberg",       url: "https://www.gutenberg.org/ebooks/search/?query=%s" },
     { id: "b10", name: "Scribd",                  url: "https://www.scribd.com/search?query=%s" },
-	{ id: "b11", name: "OneMoreLibrary",          url: "https://onemorelibrary.com/index.php/en/search-results?se=1&search=%s" },
-	{ id: "b12", name: "Chest of Books",          url: "https://chestofbooks.com/search.html?cx=000348145676127462126%3Anjhvjbiv4do&q=%s" },
-	{ id: "b13", name: "OceanofPDF",              url: "https://oceanofpdf.com/?s=%s" },
+	  { id: "b11", name: "OneMoreLibrary",          url: "https://onemorelibrary.com/index.php/en/search-results?se=1&search=%s" },
+	  { id: "b12", name: "Chest of Books",          url: "https://chestofbooks.com/search.html?cx=000348145676127462126%3Anjhvjbiv4do&q=%s" },
+	  { id: "b13", name: "OceanofPDF",              url: "https://oceanofpdf.com/?s=%s" },
     { id: "b14", name: "PDF Drive",               url: "https://www.pdfdrive.com/?s=%s" },
 
     { id: "b15", name: "Google Books",            url: "https://www.google.com/search?udm=36&q=%s" },
-	{ id: "b16", name: "PublicLiterature.org",    url: "https://publicliterature.org/?s=%s" },
+	  { id: "b16", name: "PublicLiterature.org",    url: "https://publicliterature.org/?s=%s" },
     { id: "b17", name: "RefSeek",                 url: "https://www.refseek.com/documents?q=%s" },
     { id: "b18", name: "Manuals Directory",       url: "https://www.manualsdir.com/search.html?q=%s" },
     { id: "b19", name: "Manualzz",                url: "https://manualzz.com/search/?q=%s" },
@@ -162,15 +163,15 @@ const DEFAULTS = (function () {
 
   const news = [
     { id: "n1",  name: "NPR",                    url: "https://www.npr.org/search?query=%s" },
-	{ id: "n2",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+	  { id: "n2",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
     { id: "n3",  name: "Ecosia News",            url: "https://www.ecosia.org/news?q=%s" },
     { id: "n4",  name: "Lilo News",              url: "https://search.lilo.org/?t=news&q=%s&drawer=settings&locale=en_US" },
     { id: "n5",  name: "OceanHero News",         url: "https://oceanhero.today/news?q=%s" },
     { id: "n6",  name: "Dogpile News",           url: "https://www.dogpile.com/serp?qc=news&q=%s" },
-	{ id: "n7",  name: "NewsLibrary",            url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" },
+	  { id: "n7",  name: "NewsLibrary",            url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" },
 
     { id: "n8",  name: "DuckDuckGo News",        url: "https://duckduckgo.com/?q=%s&ia=news&iar=news" },
-	{ id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
+	  { id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
     { id: "n10", name: "Associated Press",       url: "https://apnews.com/search?q=%s" },
     { id: "n11", name: "Reuters",                url: "https://www.reuters.com/site-search/?query=%s" },
     { id: "n12", name: "Flipboard",              url: "https://flipboard.com/topic/%s" }
@@ -308,6 +309,25 @@ const DEFAULTS = (function () {
     { id: "sm18", name: "Lemmy.World",         url: "https://lemmy.world/search?q=%s&type=Posts&listingType=All&page=1&sort=TopAll&titleOnly=false" }
   ];
 
+  const moviestv = [
+    { id: "mo1", name: "JustWatch",                    url: "https://www.justwatch.com/us/search?q=%s" },
+    { id: "mo2", name: "IMDb",                         url: "https://www.imdb.com/find/?q=%s" },
+    { id: "mo3", name: "The Movie Database (TMDb)",    url: "https://www.themoviedb.org/search/movie?query=%s" },
+    { id: "mo4", name: "Rotten Tomatoes",              url: "https://www.rottentomatoes.com/search?search=%s" },
+    { id: "mo5", name: "MetaCritic",                   url: "https://www.metacritic.com/search/%s" },
+    { id: "mo6", name: "Letterboxd",                   url: "https://letterboxd.com/search/%s" }
+  ];
+
+  const music = [
+    { id: "mu1", name: "Discogs",                      url: "https://www.discogs.com/search?q=%s" },
+    { id: "mu2", name: "Metal Archives",               url: "http://metal-archives.com/search?searchString=%s&type=band_name" },
+    { id: "mu3", name: "Spotify",                      url: "https://open.spotify.com/search/%s" },
+    { id: "mu4", name: "iHeartRadio",                  url: "https://www.iheart.com/search?q=%s&a=1" },
+    { id: "mu5", name: "SoundCloud",                   url: "https://soundcloud.com/search?q=%s" },
+    { id: "mu6", name: "Last.fm",                      url: "https://www.last.fm/search?q=%s" },
+    { id: "mu7", name: "Bandcamp",                     url: "https://bandcamp.com/search?q=%s" }
+  ];
+
   const ai = [
     { id: "ai1",   name: "ChatGPT",        url: "https://chatgpt.com/?q=%s" },
     { id: "ai2",   name: "Grok",           url: "https://grok.com/?q=%s" },
@@ -356,7 +376,23 @@ const DEFAULTS = (function () {
     { id: "j24", name: "Workable",          url: "https://jobs.workable.com/search?query=%s" },
     { id: "j25", name: "Jobot",             url: "https://jobot.com/search?q=%s" },
     { id: "j26", name: "ReadySetHire",      url: "https://jobs.readysethire.com/search/results?q=%s" },
-    { id: "j27", name: "WeWorkRemotely",    url: "https://weworkremotely.com/remote-jobs/search?term=%s" }
+    { id: "j27", name: "JobLeads",          url: "https://www.jobleads.com/search/jobs?keywords=%s" },
+    { id: "j28", name: "WeWorkRemotely",    url: "https://weworkremotely.com/remote-jobs/search?term=%s" }
+  ];
+
+  const scamscanners = [
+    { id: "sc1",  name: "ScamAdviser",            url: "https://www.scamadviser.com/check-website/%s" },
+    { id: "sc2",  name: "URLVoid",                url: "https://www.urlvoid.com/scan/%s" },
+    { id: "sc3",  name: "Scamy.io",               url: "https://scamy.io/?domain=%s" },
+    { id: "sc4",  name: "CheckPhish",             url: "https://app.checkphish.ai/live-scan?url=%s" },
+    { id: "sc5",  name: "GetSafeOnline",          url: "https://check.getsafeonline.org/check/%s" },
+    { id: "sc6",  name: "Sucuri",                 url: "https://sitecheck.sucuri.net/results/%s" },
+    { id: "sc7",  name: "Yima",                   url: "https://www.yima.org.za/scanresults?url=%s" },
+
+    { id: "sc8",  name: "eScamly",                url: "https://www.escamly.com/check-website/%s" },
+    { id: "sc9",  name: "Is It Hacked?",          url: "https://isithacked.com/check/%s" },
+    { id: "sc10", name: "VirusTotal",             url: "https://www.virustotal.com/gui/search?query=http%3A%2F%2F%s" },
+    { id: "sc11", name: "Email Veritas",          url: "https://www.emailveritas.com/url-checker/%s" }
   ];
 
   const misc = [
@@ -369,33 +405,18 @@ const DEFAULTS = (function () {
     { id: "m7",  name: "Kickstarter",                  url: "https://www.kickstarter.com/discover/advanced?term=%s" },
 
     { id: "m8",  name: "Yelp",                         url: "https://www.yelp.com/search?find_desc=%s" },
-    { id: "m9",  name: "JustWatch",                    url: "https://www.justwatch.com/us/search?q=%s" },
-    { id: "m10", name: "IMDb",                         url: "https://www.imdb.com/find/?q=%s" },
-    { id: "m11", name: "The Movie Database (TMDb)",    url: "https://www.themoviedb.org/search/movie?query=%s" },
-    { id: "m12", name: "Rotten Tomatoes",              url: "https://www.rottentomatoes.com/search?search=%s" },
-    { id: "m13", name: "MetaCritic",                   url: "https://www.metacritic.com/search/%s" },
-    { id: "m14", name: "Letterboxd",                   url: "https://letterboxd.com/search/%s" },
+    { id: "m9", name: "GitHub",                       url: "https://github.com/search?q=%s" },
+    { id: "m10", name: "GreasyFork",                   url: "https://greasyfork.org/en/scripts?q=%s" },
+    { id: "m11", name: "Shodan.io",                    url: "https://www.shodan.io/search?query=%s" },
+    { id: "m12", name: "Stack Overflow",               url: "https://stackoverflow.com/search?q=%s" },
+    { id: "m13", name: "Stack Exchange",               url: "https://stackexchange.com/search?q=%s" },
+    { id: "m14", name: "Stack Exchange (Math)",        url: "https://math.stackexchange.com/search?q=%s" },
 
     { id: "m15", name: "TripAdvisor",                  url: "https://www.tripadvisor.com/Search?q=%s" },
-    { id: "m16", name: "GitHub",                       url: "https://github.com/search?q=%s" },
-    { id: "m17", name: "GreasyFork",                   url: "https://greasyfork.org/en/scripts?q=%s" },
-    { id: "m18", name: "Shodan.io",                    url: "https://www.shodan.io/search?query=%s" },
-    { id: "m19", name: "Stack Overflow",               url: "https://stackoverflow.com/search?q=%s" },
-    { id: "m20", name: "Stack Exchange",               url: "https://stackexchange.com/search?q=%s" },
-    { id: "m21", name: "Stack Exchange (Math)",        url: "https://math.stackexchange.com/search?q=%s" },
-
-    { id: "m22", name: "Discogs",                      url: "https://www.discogs.com/search?q=%s" },
-    { id: "m23", name: "Metal Archives",               url: "http://metal-archives.com/search?searchString=%s&type=band_name" },
-    { id: "m24", name: "Spotify",                      url: "https://open.spotify.com/search/%s" },
-    { id: "m25", name: "iHeartRadio",                  url: "https://www.iheart.com/search?q=%s&a=1" },
-    { id: "m26", name: "SoundCloud",                   url: "https://soundcloud.com/search?q=%s" },
-    { id: "m27", name: "Last.fm",                      url: "https://www.last.fm/search?q=%s" },
-    { id: "m28", name: "Bandcamp",                     url: "https://bandcamp.com/search?q=%s" },
-
-    { id: "m29", name: "RhymeZone",                    url: "https://www.rhymezone.com/r/rhyme.cgi?Word=%s" },
-    { id: "m30", name: "Jisho",                        url: "https://jisho.org/search/%s" },
-    { id: "m31", name: "DeviantArt",                   url: "https://www.deviantart.com/search?q=%s" },
-    { id: "m32", name: "ArtStation",                   url: "https://www.artstation.com/search?sort_by=relevance&query=%s" }
+    { id: "m16", name: "RhymeZone",                    url: "https://www.rhymezone.com/r/rhyme.cgi?Word=%s" },
+    { id: "m17", name: "Jisho",                        url: "https://jisho.org/search/%s" },
+    { id: "m18", name: "DeviantArt",                   url: "https://www.deviantart.com/search?q=%s" },
+    { id: "m19", name: "ArtStation",                   url: "https://www.artstation.com/search?sort_by=relevance&query=%s" }
   ];
 
   const page4 = [
@@ -419,24 +440,27 @@ const DEFAULTS = (function () {
   ];
 
   return {
-    general: { name: "General", engines: general },
-    images: { name: "Images", engines: images },
-    videos: { name: "Videos", engines: videos },
-    information: { name: "Information", engines: information },
-    howto: { name: "HowTo", engines: howto },
-    books: { name: "Books, PDFs, Manuals", engines: books },
-    news: { name: "News", engines: news },
-    shopping: { name: "Shopping", engines: shopping },
-    dictionaries: { name: "Dictionaries", engines: dictionaries },
-    thesauruses: { name: "Thesauruses", engines: thesauruses },
-    translators: { name: "Translators", engines: translators },
-    photography: { name: "Photography (Free)", engines: photography },
-    cooking: { name: "Cooking", engines: cooking },
-    socialmedia: { name: "Social Media & Blogs", engines: socialmedia },
-    ai: { name: "AI Chatbots", engines: ai },
-    jobs: { name: "Jobs", engines: jobs },
-    misc: { name: "Media, Miscellaneous", engines: misc },
-    page4: { name: "Skip to Page 4", engines: page4 }
+    general: { name: "General", engines: general, description: "Search multiple search engines simultaneously" },
+    images: { name: "Images", engines: images, description: "Search every image search engine/website simultaneously" },
+    videos: { name: "Videos", engines: videos, description: "Search every video upload website simultaneously" },
+    information: { name: "Information/Encyclopedias", engines: information, description: "Find the answers you're looking by searching every info-haven simultaneously" },
+    howto: { name: "How-To Guides", engines: howto, description: "Get the instructions you need from every how-to guide site simultaneously" },
+    books: { name: "Books, PDFs, Manuals", engines: books, description: "Find the book, or the PDF of a book, or any PDFs at all, from every library of books and PDFs, simultaneously" },
+    news: { name: "News", engines: news, description: "Find the news article you're looking to read from every news link provider simultaneously" },
+    shopping: { name: "Shopping", engines: shopping, description: "Find the best price by searching every shopping website simultaneously" },
+    dictionaries: { name: "Dictionaries", engines: dictionaries, description: "Find the best explanation of a word by checking every dictionary online simultaneously" },
+    thesauruses: { name: "Thesauruses", engines: thesauruses, description: "Find the word that best suits what you're trying to explain, with every thesaurus online simultaneously" },
+    translators: { name: "Translators", engines: translators, description: "Check the translation of a word/sentence in another language using every translator simultaneously" },
+    photography: { name: "Photography (Free)", engines: photography, description: "Find the best version of a photograph you're looking for by checking every photography website simultaneously" },
+    cooking: { name: "Cooking", engines: cooking, description: "Find the best recipe by checking every recipe website simultaneously" },
+    socialmedia: { name: "Social Media & Blogs", engines: socialmedia, description: "See everyone's opinions on a hashtag by searching that hashtag on every social media website simultaneously" },
+    moviestv: { name: "Movies & TV", engines: moviestv, description: "Search every cinema-related website simultaneously" },
+    music: { name: "Music & Radio", engines: music, description: "Search every music and radio website simultaneously" },
+    ai: { name: "AI Chatbots", engines: ai, description: "Get the answer to your weird question by sending your question to every AI chatbot simultaneously" },
+    jobs: { name: "Jobs", engines: jobs, description: "Find the job you're looking for by searching every job search website simultaneously" },
+    scamscanners: { name: "Scam Website Scanners", engines: scamscanners, description: "Test the validity of a website by sending the URL to every scam website scanner simultaneously (leave out https://)" },
+    misc: { name: "Media, Miscellaneous", engines: misc, description: "Niche options, more to provide you easier access to commonly used websites" },
+    page4: { name: "Skip to Page 4", engines: page4, description: "This lets you skip past the common results to find the more obscure results you rarely see" }
   };
 })();
 
@@ -457,5 +481,6 @@ const DEFAULT_ENABLED_IDS = new Set([
   "sm1","sm2","sm3","sm5","sm6","sm7",
   "ai1","ai2","ai3","ai4","ai5",
   "j1","j2","j3","j4","j5",
+  "sc1","sc2","sc3","sc4","sc5",
   "pf1","pf2","pf3","pf9","pf10","pf11",
 ]);
