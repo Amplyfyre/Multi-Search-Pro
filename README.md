@@ -32,7 +32,7 @@ In order to customize Multi-Search Pro to include a new website:
 
 • Determine the group that the website belongs in (create a new one at the top) 
 
-• Scroll to the bottom of the group, find the input fields labeled “Engine name” and “URL with %s” 
+• Scroll to the bottom of the group, find the input fields labeled “Engine name” and “URL with %s” field
 
 • Name the website in the “Engine name” field, then paste the URL in the “URL with %s” 
 
