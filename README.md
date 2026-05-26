@@ -11,7 +11,7 @@ Type what you want to search in the input field labeled “Type what you want to
 
 Use the “Expand” buttons for each group category to see what websites are available, and check their individual checkboxes to include them in the overall search. A handful websites are checked by default, and only the “General” search engine group is checked by default, to prevent a swarm of websites from overwhelming your browser.
 
-While the goal was indeed to make such a massive search possible, I’ve realized that this may not be the ideal way to utilize this tool, so I’ve also included “Go” buttons for each category, that work similarly to the Launch button, but only function within their respective groups. This is my preferred method. You can also click a single website’s thumbnail in order to open a tab to search just that website.
+While the goal was indeed to make such a massive search possible, I’ve realized that this may not be the ideal way to utilize this tool, so I’ve also included “Go” buttons for each category, that work similarly to the Launch button, but only function within their respective groups. This is my preferred method. You can also click a single website’s thumbnail to send the search terms to just that website.
 
 The “Keep popup open” option prevents the extension from closing upon running any search. “Show unchecked” can be unchecked in order to only show the selected websites in the groups. “Throttle” helps prevent tabs from opening too fast, and “Max tabs” limits the number of websites that will open from running a search.
 
