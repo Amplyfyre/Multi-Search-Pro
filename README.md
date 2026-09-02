@@ -1,4 +1,7 @@
 # Multi-Search Pro
+
+UPDATE: A lot has changed with v1.1.0 and I will need to update this summary to fit the new layout, stay tuned!
+
 It is recommended that someone doing online research looks at more than one source. Thing is, people generally don't want to send another search to a second/third/fourth website. I wanted the ability to use every search engine simultaneously. Same search terms, multiple websites. I tried to find a browser extension that could do it, but they were all severely limited to the most popular websites (Google, Bing, Yahoo), and none of them were able to open all of the websites simultaneously. I got really close to what I was looking for with an extension called SearchSK, which had bookmark customization that made me realize how much further a tool like this could be taken.
 
 Looking for the best prices? Search every shopping website all at the same time. Looking for the perfect photograph? Search all of the photography websites all at the same time. Trying to find the best recipe for a meal? Search every recipe website all at the same time.
