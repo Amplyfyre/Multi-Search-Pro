@@ -4,6 +4,7 @@
 // { id: "m1",  name: "Mozilla Add-ons",              url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
 
 
+
 const DEFAULTS = (function () {
   const frequentsites = [
     { id: "fs1",  name: "Startpage",           url: "https://www.startpage.com/do/search?query=%s" },
@@ -31,103 +32,96 @@ const DEFAULTS = (function () {
     { id: "g4",  name: "Swisscows",             url: "https://www.swisscows.com/web?query=%s" },
     { id: "g5",  name: "Yep",                   url: "https://www.yep.com/web?q=%s" },
     { id: "g6",  name: "Mojeek",                url: "https://www.mojeek.com/search?q=%s" },
-    { id: "g7",  name: "Norton Safe Search",    url: "https://nortonsafe.search.ask.com/web?q=%s" },
+    { id: "g7", name: "Becovi",                 url: "https://search.becovi.com/serp.php?q=%s&i=" },
 
     { id: "g8",  name: "Yahoo Goodsearch",      url: "https://search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhst-goodsearch_yhs&p=%s" },
     { id: "g9",  name: "OceanHero",             url: "https://www.oceanhero.today/web?q=%s" },
     { id: "g10", name: "Ecosia",                url: "https://www.ecosia.org/search?q=%s" },
     { id: "g11", name: "Lilo",                  url: "https://search.lilo.org/?q=%s" },
-    { id: "g12", name: "Lukol",                 url: "https://www.lukol.com/s.php?q=%s" },
-    { id: "g13", name: "Gibiru",                url: "https://www.gibiru.com/results.html?q=%s" },
-    { id: "g14", name: "Becovi",                url: "https://search.becovi.com/serp.php?q=%s&i=" },
+    { id: "g12", name: "Ekoru",                 url: "https://www.ekoru.org/?q=%s" },
+    { id: "g13", name: "Rapusia",               url: "https://www.rapusia.org/?q=%s" },
+    { id: "g14", name: "GiveWater",             url: "https://search.givewater.com/serp?q=%s" },
 
-    { id: "g15", name: "YouCare.World",         url: "https://www.youcare.world/all?q=%s" },
-    { id: "g16", name: "Ekoru",                 url: "https://www.ekoru.org/?q=%s" },
-    { id: "g17", name: "Rapusia",               url: "https://www.rapusia.org/?q=%s" },
-    { id: "g18", name: "GiveWater",             url: "https://search.givewater.com/serp?q=%s" },
-    { id: "g19", name: "Entireweb",             url: "https://search.entireweb.com/search?q=%s" },
-    { id: "g20", name: "Excite",                url: "https://results.excite.com/serp?q=%s" },
-    { id: "g21", name: "Dogpile",               url: "https://www.dogpile.com/serp?q=%s" },
- 
-    { id: "g22", name: "Google",                url: "https://www.google.com/search?q=%s" },
-    { id: "g23", name: "Bing",                  url: "https://www.bing.com/search?q=%s" },
-    { id: "g24", name: "Lycos",                 url: "https://search.lycos.com/web/?q=%s" },
-    { id: "g25", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
-    { id: "g26", name: "Qwant",                 url: "https://www.qwant.com/?q=%s" },
-    { id: "g27", name: "Yandex",                url: "https://www.yandex.com/search/?text=%s" }
+    { id: "g15", name: "Google",                url: "https://www.google.com/search?q=%s" },
+    { id: "g16", name: "Bing",                  url: "https://www.bing.com/search?q=%s" },
+    { id: "g17", name: "Dogpile",               url: "https://www.dogpile.com/serp?q=%s" },
+    { id: "g18", name: "Lukol",                 url: "https://www.lukol.com/s.php?q=%s" },
+    { id: "g19", name: "Gibiru",                url: "https://www.gibiru.com/results.html?q=%s" },
+    { id: "g20", name: "Qwant",                 url: "https://www.qwant.com/?q=%s" },
+    { id: "g21", name: "Yandex",                url: "https://www.yandex.com/search/?text=%s" },
+
+    { id: "g22", name: "Entireweb",             url: "https://search.entireweb.com/search?q=%s" },
+    { id: "g23", name: "Lycos",                 url: "https://www.lycos.com/search?kw=%s" },
+    { id: "g24", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
+    { id: "g25", name: "Norton Safe Search",    url: "https://nortonsafe.search.ask.com/web?q=%s" },
+    { id: "g26", name: "Excite",                url: "https://results.excite.com/serp?q=%s" }
   ];
 
   const images = [
-    { id: "im1", name: "Pinterest",              url: "https://www.pinterest.com/search/pins/?q=%s" },
-    { id: "im2", name: "Imgur",                  url: "https://www.imgur.com/search?q=%s" },
-    { id: "im3", name: "Wikimedia Images",       url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=image" },
-    { id: "im4", name: "Tumblr Images",          url: "https://www.tumblr.com/search/%s?postTypes=gif%2Cphoto&src=typed_query" },
-    { id: "im5", name: "Giphy",                  url: "https://www.giphy.com/search/%s" },
-	  { id: "im6", name: "Tenor",                  url: "https://www.tenor.com/en-GB/search/%s-gifs" },
-    { id: "im7", name: "Scrolller",              url: "https://www.scrolller.com/r/%s" },
+    { id: "im1",  name: "Pinterest",              url: "https://www.pinterest.com/search/pins/?q=%s" },
+    { id: "im2",  name: "Imgur",                  url: "https://www.imgur.com/search?q=%s" },
+    { id: "im3",  name: "Wikimedia Images",       url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=image" },
+    { id: "im4",  name: "Tumblr Images",          url: "https://www.tumblr.com/search/%s?postTypes=gif%2Cphoto&src=typed_query" },
+    { id: "im5",  name: "Giphy",                  url: "https://www.giphy.com/search/%s" },
+    { id: "im6",  name: "Tenor",                  url: "https://www.tenor.com/en-GB/search/%s-gifs" },
+    { id: "im7",  name: "Scrolller",              url: "https://www.scrolller.com/r/%s" },
 
-    { id: "im8",  name: "DuckDuckGo Img",        url: "https://www.duckduckgo.com/?q=%s&iax=images&ia=images" },
-    { id: "im9",  name: "Brave Img",             url: "https://search.brave.com/images?q=%s" },
-    { id: "im10", name: "Startpage Img",         url: "https://www.startpage.com/do/search?query=%s&cat=pics" },
-    { id: "im11", name: "Swisscows Img",         url: "https://www.swisscows.com/image?query=%s" },
-    { id: "im12", name: "Yep Img",               url: "https://www.yep.com/images?q=%s" },
-    { id: "im13", name: "Fotki",                 url: "https://search.fotki.com/?q=%s" },
-    { id: "im14", name: "Pholder",               url: "https://www.pholder.com/%s" },
+    { id: "im8",  name: "DuckDuckGo Img",         url: "https://www.duckduckgo.com/?q=%s&iax=images&ia=images" },
+    { id: "im9",  name: "Brave Img",              url: "https://search.brave.com/images?q=%s" },
+    { id: "im10", name: "Startpage Img",          url: "https://www.startpage.com/do/search?query=%s&cat=pics" },
+    { id: "im11", name: "Swisscows Img",          url: "https://www.swisscows.com/image?query=%s" },
+    { id: "im12", name: "Yep Img",                url: "https://www.yep.com/images?q=%s" },
+    { id: "im13", name: "Fotki",                  url: "https://search.fotki.com/?q=%s" },
+    { id: "im14", name: "Pholder",                url: "https://www.pholder.com/%s" },
 
-    { id: "im15", name: "Yahoo GoodSearch Img",  url: "https://images.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
-    { id: "im16", name: "OceanHero Img",         url: "https://www.oceanhero.today/images?q=%s" },
-    { id: "im17", name: "Ecosia Img",            url: "https://www.ecosia.org/images?q=%s" },
-    { id: "im18", name: "Sogou Img",             url: "https://pic.sogou.com/pics?query=%s" },
-    { id: "im19", name: "Lukol Img",             url: "https://www.lukol.com/i.php?q=%s" },
-    { id: "im20", name: "Fireball Img",          url: "https://www.fireball.com/search?q=%s&f=images" },
-    { id: "im21", name: "Dogpile Img",           url: "https://www.dogpile.com/serp?qc=images&q=%s" },
+    { id: "im15", name: "Yahoo GoodSearch Img",   url: "https://images.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+    { id: "im16", name: "OceanHero Img",          url: "https://www.oceanhero.today/images?q=%s" },
+    { id: "im17", name: "Ecosia Img",             url: "https://www.ecosia.org/images?q=%s" },
+    { id: "im18", name: "Lilo Img",               url: "https://search.lilo.org/?t=images&q=%s" },
+    { id: "im19", name: "GiveWater Img",          url: "https://search.givewater.com/serp?qc=images&q=%s" },
+    { id: "im20", name: "Sogou Img",              url: "https://pic.sogou.com/pics?query=%s" },
+    { id: "im21", name: "Baidu Img",              url: "https://image.baidu.com/search/index?tn=baiduimage&word=%s" },
 
-    { id: "im22", name: "YouCare Img",           url: "https://www.youcare.world/images?q=%s" },
-    { id: "im23", name: "Lilo Img",              url: "https://search.lilo.org/?t=images&q=%s" },
-    { id: "im24", name: "GiveWater Img",         url: "https://search.givewater.com/serp?qc=images&q=%s" },
-    { id: "im25", name: "Baidu Img",             url: "https://image.baidu.com/search/index?tn=baiduimage&word=%s" },
-    { id: "im26", name: "Qwant Img",             url: "https://www.qwant.com/?q=%s&t=images" },
-    { id: "im27", name: "Yandex Img",            url: "https://www.yandex.com/images/search?text=%s" },
-    { id: "im28", name: "Bing Img",              url: "https://www.bing.com/images/search?q=%s" },
-
-    { id: "im29", name: "Google Img",            url: "https://www.google.com/search?tbm=isch&q=%s" },
+    { id: "im22", name: "Google Img",             url: "https://www.google.com/search?tbm=isch&q=%s" },
+    { id: "im23", name: "Bing Img",               url: "https://www.bing.com/images/search?q=%s" },
+    { id: "im14", name: "Lukol Img",              url: "https://www.lukol.com/i.php?q=%s" },
+    { id: "im25", name: "Dogpile Img",            url: "https://www.dogpile.com/serp?qc=images&q=%s" },
+    { id: "im26", name: "Qwant Img",              url: "https://www.qwant.com/?q=%s&t=images" },
+    { id: "im27", name: "Yandex Img",             url: "https://www.yandex.com/images/search?text=%s" }
   ];
 
   const videos = [
-    { id: "v1",  name: "YouTube",               url: "https://www.youtube.com/results?search_query=%s" },
-    { id: "v2",  name: "Odysee",                url: "https://www.odysee.com/$/search?q=%s" },
-    { id: "v3",  name: "DailyMotion",           url: "https://www.dailymotion.com/search/%s/videos" },
-    { id: "v4",  name: "Vimeo",                 url: "https://www.vimeo.com/search?q=%s" },
-    { id: "v5",  name: "Nebula",                url: "https://www.nebula.tv/search?q=%s" },   
-    { id: "v6",  name: "TikTok",                url: "https://www.tiktok.com/search/video?q=%s" },
-    { id: "v7",  name: "Snapchat",              url: "https://www.snapchat.com/explore/%s" },
+    { id: "v1", name: "YouTube",               url: "https://www.youtube.com/results?search_query=%s" },
+    { id: "v2", name: "Odysee",                url: "https://www.odysee.com/$/search?q=%s" },
+    { id: "v3", name: "DailyMotion",           url: "https://www.dailymotion.com/search/%s/videos" },
+    { id: "v4", name: "Vimeo",                 url: "https://www.vimeo.com/search?q=%s" },
+    { id: "v5", name: "Nebula",                url: "https://www.nebula.tv/search?q=%s" },
+    { id: "v6", name: "TikTok",                url: "https://www.tiktok.com/search/video?q=%s" },
+    { id: "v7", name: "Snapchat",              url: "https://www.snapchat.com/explore/%s" },
 
-    { id: "v8",  name: "Wikimedia Videos",      url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=video" },
-    { id: "v9",  name: "Sepia Search",          url: "https://www.sepiasearch.org/search?search=%s" },
-    { id: "v10", name: "FC2 Video",             url: "https://video.fc2.com/search/video/?keyword=%s" },
-    { id: "v11", name: "ItemFix",               url: "https://www.itemfix.com/list?q=%s" },
-    { id: "v12", name: "VideoSift",             url: "https://www.videosift.com/search?q=%s" },
-    { id: "v13", name: "Bitchute",              url: "https://www.bitchute.com/search?query=%s" },
-    { id: "v14", name: "Rumble",                url: "https://www.rumble.com/search/all?q=%s" },
+    { id: "v8", name: "Wikimedia Videos",      url: "https://commons.wikimedia.org/w/index.php?search=%s&title=Special%3AMediaSearch&type=video" },
+    { id: "v9", name: "Sepia Search",          url: "https://www.sepiasearch.org/search?search=%s" },
+    { id: "v10", name: "FC2 Video",            url: "https://video.fc2.com/search/video/?keyword=%s" },
+    { id: "v11", name: "ItemFix",              url: "https://www.itemfix.com/list?q=%s" },
+    { id: "v12", name: "VideoSift",            url: "https://www.videosift.com/search?q=%s" },
+    { id: "v13", name: "Bitchute",             url: "https://www.bitchute.com/search?query=%s" },
+    { id: "v14", name: "Rumble",               url: "https://www.rumble.com/search/all?q=%s" },
 
-    { id: "v15", name: "DuckDuckGo Vid",        url: "https://www.duckduckgo.com/?q=%s&iax=videos&ia=videos" },
-    { id: "v16", name: "Brave Vid",             url: "https://search.brave.com/videos?q=%s&source=web" },
-    { id: "v17", name: "Startpage Vid",         url: "https://www.startpage.com/do/search?query=%s&cat=video" },
-    { id: "v18", name: "Swisscows Vid",         url: "https://www.swisscows.com/en/video?query=%s" },
-    { id: "v19", name: "Fireball Vid",          url: "https://www.fireball.com/search/?f=videos&q=%s" },
-    { id: "v20", name: "WebCrawler Vid",        url: "https://www.webcrawler.com/serp?qc=video&q=%s" },
-    { id: "v21", name: "Dogpile Vid",           url: "https://www.dogpile.com/serp?qc=video&q=%s" },
+    { id: "v15", name: "DuckDuckGo Vid",       url: "https://www.duckduckgo.com/?q=%s&iax=videos&ia=videos" },
+    { id: "v16", name: "Brave Vid",            url: "https://search.brave.com/videos?q=%s&source=web" },
+    { id: "v17", name: "Startpage Vid",        url: "https://www.startpage.com/do/search?query=%s&cat=video" },
+    { id: "v18", name: "Swisscows Vid",        url: "https://www.swisscows.com/en/video?query=%s" },
+    { id: "v19", name: "Bing Vid",             url: "https://www.bing.com/videos/search?q=%s" },
+    { id: "v20", name: "Qwant Vid",            url: "https://www.qwant.com/?q=%s&t=videos" },
+    { id: "v21", name: "Yandex Vid",           url: "https://www.yandex.com/video/search?text=%s" },
 
-    { id: "v22", name: "Yahoo GoodSearch Vid",  url: "https://video.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
-    { id: "v23", name: "OceanHero Vid",         url: "https://www.oceanhero.today/videos?q=%s" },
-    { id: "v24", name: "Ecosia Vid",            url: "https://www.ecosia.org/videos?q=%s" },
-    { id: "v25", name: "Lilo Vid",              url: "https://search.lilo.org/?t=videos&q=%s" },
-    { id: "v26", name: "GiveWater Vid",         url: "https://search.givewater.com/serp?qc=video&q=%s" },
-    { id: "v27", name: "Qwant Vid",             url: "https://www.qwant.com/?q=%s&t=videos" },
-    { id: "v28", name: "Yandex Vid",            url: "https://www.yandex.com/video/search?text=%s" },
-
-    { id: "v29", name: "Bing Vid",              url: "https://www.bing.com/videos/search?q=%s" },
-    { id: "v30", name: "Metatube",              url: "https://www.metatube.com/search/?q=%s" }
+    { id: "v22", name: "Yahoo GoodSearch Vid", url: "https://video.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+    { id: "v23", name: "OceanHero Vid",        url: "https://www.oceanhero.today/videos?q=%s" },
+    { id: "v24", name: "Ecosia Vid",           url: "https://www.ecosia.org/videos?q=%s" },
+    { id: "v25", name: "Lilo Vid",             url: "https://search.lilo.org/?t=videos&q=%s" },
+    { id: "v26", name: "GiveWater Vid",        url: "https://search.givewater.com/serp?qc=video&q=%s" },
+    { id: "v27", name: "Dogpile Vid",          url: "https://www.dogpile.com/serp?qc=video&q=%s" },
+    { id: "v28", name: "WebCrawler Vid",       url: "https://www.webcrawler.com/serp?qc=video&q=%s" }
   ];
 
   const information = [
@@ -146,11 +140,12 @@ const DEFAULTS = (function () {
   const howto = [
     { id: "h1", name: "WikiHow",              url: "https://www.wikihow.com/wikiHowTo?search=%s" },
     { id: "h2", name: "Instructables",        url: "https://www.instructables.com/search/?q=%s" },
-    { id: "h3", name: "Lifehacker",           url: "https://www.lifehacker.com/search/?q=%s" },
+    { id: "h3", name: "Lifehacker",           url: "https://lifehacker.com/search/?s=%s" },
     { id: "h4", name: "WonderHowTo",          url: "https://www.wonderhowto.com/search/?query=%s" },
     { id: "h5", name: "eHow",                 url: "https://www.ehow.com/search?q=%s" },
-    { id: "h6", name: "LoveToKnow",           url: "https://www.lovetoknow.com/search/results?q=%s" },
+    { id: "h6", name: "LoveToKnow",           url: "https://www.lovetoknow.com/search?q=%s" },
     { id: "h7", name: "Makezine",             url: "https://www.makezine.com/?s=%s" }
+
   ];
 
   const books = [
@@ -191,44 +186,52 @@ const DEFAULTS = (function () {
 	  { id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
     { id: "n10", name: "Associated Press",       url: "https://www.apnews.com/search?q=%s" },
     { id: "n11", name: "Reuters",                url: "https://www.reuters.com/site-search/?query=%s" },
-    { id: "n12", name: "Flipboard",              url: "https://www.flipboard.com/topic/%s" }
+    { id: "n12", name: "Flipboard",              url: "https://flipboard.com/search/%s" }
   ];
 
   const shopping = [
-    { id: "s1",  name: "Amazon",                 url: "https://www.amazon.com/s?k=%s" },
-    { id: "s2",  name: "eBay",                   url: "https://www.ebay.com/sch/i.html?_nkw=%s" },
-    { id: "s3",  name: "Slickdeals",             url: "https://www.slickdeals.net/search?q=%s" },
-    { id: "s4",  name: "Etsy",                   url: "https://www.etsy.com/search?q=%s" },
-    { id: "s5",  name: "Target",                 url: "https://www.target.com/s?searchTerm=%s" },
-    { id: "s6",  name: "Walmart",                url: "https://www.walmart.com/search/?query=%s" },
-    { id: "s7",  name: "Newegg",                 url: "https://www.newegg.com/p/pl?d=%s" },
+    { id: "s1",  name: "Amazon",                url: "https://www.amazon.com/s?k=%s" },
+    { id: "s2",  name: "eBay",                  url: "https://www.ebay.com/sch/i.html?_nkw=%s" },
+    { id: "s3",  name: "Slickdeals",            url: "https://www.slickdeals.net/search?q=%s" },
+    { id: "s4",  name: "Etsy",                  url: "https://www.etsy.com/search?q=%s" },
+    { id: "s5",  name: "Target",                url: "https://www.target.com/s?searchTerm=%s" },
+    { id: "s6",  name: "Walmart",               url: "https://www.walmart.com/search/?query=%s" },
+    { id: "s7",  name: "Newegg",                url: "https://www.newegg.com/p/pl?d=%s" },
 
-    { id: "s8",  name: "YouCare Shopping",       url: "https://www.youcare.world/shopping?q=%s" },
-    { id: "s9",  name: "Overstock",              url: "https://www.overstock.com/%s,/k,/results.html" },
-    { id: "s10", name: "PriceRunner",            url: "https://www.pricerunner.com/results?q=%s" },
-    { id: "s11", name: "OfferUp",                url: "https://www.offerup.com/search?q=%s" },
-    { id: "s12", name: "Price.com",              url: "https://www.price.com/search?query=%s" },
-    { id: "s13", name: "Shopping.com",           url: "https://www.shopping.com/search.html?keyword=%s" },
-    { id: "s14", name: "Banggood",               url: "https://www.banggood.com/search/%s.html" },
+    { id: "s8",  name: "Yahoo Shopping",        url: "https://us.shopping.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+    { id: "s9",  name: "Overstock",             url: "https://www.overstock.com/%s,/k,/results.html" },
+    { id: "s10", name: "PriceRunner",           url: "https://www.pricerunner.com/results?q=%s" },
+    { id: "s11", name: "OfferUp",               url: "https://www.offerup.com/search?q=%s" },
+    { id: "s12", name: "Price.com",             url: "https://www.price.com/search?query=%s" },
+    { id: "s13", name: "Shopping.com",          url: "https://www.shopping.com/search.html?keyword=%s" },
+    { id: "s14", name: "Banggood",              url: "https://www.banggood.com/search/%s.html" },
 
-    { id: "s15", name: "Become.com",             url: "https://www.become.com/%s/search" },
-    { id: "s16", name: "Price Pirates",          url: "https://www.pricepirates.com/?q=%s" },
-    { id: "s17", name: "Google Shopping",        url: "https://www.google.com/search?tbm=shop&q=%s" },
-    { id: "s18", name: "Bing Shopping",          url: "https://www.bing.com/shop?q=%s" },
-    { id: "s19", name: "Yahoo Shopping",         url: "https://www.shopping.yahoo.com/search/?p=%s" },
-    { id: "s20", name: "Monoprice",              url: "https://www.monoprice.com/search/index?keyword=%s" },
-    { id: "s21", name: "Harbor Freight Tools",   url: "https://www.harborfreight.com/search?q=%s" }
-    
+    { id: "s15", name: "Google Shopping",       url: "https://www.google.com/search?tbm=shop&q=%s" },
+    { id: "s16", name: "Bing Shopping",         url: "https://www.bing.com/shop?q=%s" },
+    { id: "s17", name: "Become.com",            url: "https://www.become.com/%s/search" },
+    { id: "s18", name: "Price Pirates",         url: "https://www.pricepirates.com/?q=%s" },
+    { id: "s19", name: "Monoprice",             url: "https://www.monoprice.com/search/index?keyword=%s" },
+    { id: "s20", name: "Harbor Freight Tools",  url: "https://www.harborfreight.com/search?q=%s" }
+  ];
+
+  const reviews = [
+    { id: "r1", name: "Yelp",                   url: "https://www.yelp.com/search?find_desc=%s" },
+    { id: "r2", name: "TripAdvisor",            url: "https://www.tripadvisor.com/Search?q=%s" },
+    { id: "r3", name: "The Infatuation",        url: "https://www.theinfatuation.com/finder?query=%s&postType=POST_TYPE_UNSPECIFIED" },
+    { id: "r4", name: "OpenTable",              url: "https://www.opentable.com/s?term=%s" },
+    { id: "r5", name: "Trustpilot",             url: "https://www.trustpilot.com/search?query=%s" },
+    { id: "r6", name: "Better Business Bureau", url: "https://www.bbb.org/search?find_text=%s&find_entity=&find_type=&find_loc=&find_country=USA" }
   ];
 
   const dictionaries = [
     { id: "d1", name: "OneLook Dict",         url: "https://www.onelook.com/?w=%s" },
     { id: "d2", name: "Wolfram|Alpha",        url: "https://www.wolframalpha.com/input/?i=%s" },
     { id: "d3", name: "Merriam-Webster",      url: "https://www.merriam-webster.com/dictionary/%s" },
-    { id: "d4", name: "Wiktionary",           url: "https://www.en.wiktionary.org/wiki/%s" },
+    { id: "d4", name: "Wiktionary",           url: "https://en.wiktionary.org/wiki/%s" },
     { id: "d5", name: "Urban Dictionary",     url: "https://www.urbandictionary.com/define.php?term=%s" },
     { id: "d6", name: "Tradukka",             url: "https://www.tradukka.com/dictionary/en/%s" },
     { id: "d7", name: "WordHippo Dict",       url: "https://www.wordhippo.com/what-is/the-meaning-of-the-word/%s.html" }
+
   ];
 
   const thesauruses = [
@@ -241,35 +244,33 @@ const DEFAULTS = (function () {
 
   const translators = [
     { id: "tr1",  name: "Forvo Translator",         url: "https://www.forvo.com/search-translation/%s/en-es/" },
-    { id: "tr2",  name: "Forvo Pronounciation",     url: "https://www.forvo.com/search/%s" },
-    { id: "tr3",  name: "Google Translate",         url: "https://translate.google.com/?hl=en&tab=TT&sl=en&tl=es&text=%s&op=translate" },
-    { id: "tr4",  name: "Bing Translate",           url: "https://www.bing.com/translator/?text=%s&to=es" },
-    { id: "tr5",  name: "Yandex Translate",         url: "https://translate.yandex.com/?lang=en-es&text=%s" },
-    { id: "tr6",  name: "HowToSay",                 url: "https://www.howtosay.org/en_es/%s" },
-    { id: "tr7",  name: "MyMemory",                 url: "https://mymemory.translated.net/en/English/Spanish/%s" },
+    { id: "tr2",  name: "Google Translate",         url: "https://translate.google.com/?hl=en&tab=TT&sl=en&tl=es&text=%s&op=translate" },
+    { id: "tr3",  name: "Bing Translate",           url: "https://www.bing.com/translator/?text=%s&to=es" },
+    { id: "tr4",  name: "Yandex Translate",         url: "https://translate.yandex.com/?lang=en-es&text=%s" },
+    { id: "tr5",  name: "HowToSay",                 url: "https://www.howtosay.org/en_es/%s" },
+    { id: "tr6",  name: "MyMemory",                 url: "https://mymemory.translated.net/en/English/Spanish/%s" },
+    { id: "tr7",  name: "InDifferentLanguages",     url: "https://www.indifferentlanguages.com/words/%s/spanish" },
 
-    { id: "tr8",  name: "InDifferentLanguages",     url: "https://www.indifferentlanguages.com/words/%s/spanish" },
-    { id: "tr9",  name: "Sensagent",                url: "https://translation.sensagent.com/%s/en-es/" },
-    { id: "tr10", name: "WordHippo Translator",     url: "https://www.wordhippo.com/what-is/the/spanish-word-for-%s.html" },
-    { id: "tr11", name: "DeepL",                    url: "https://www.deepl.com/translator#en/es/%s" },
-    { id: "tr12", name: "Translatero",              url: "https://www.translatero.com/english-spanish/translate/%s" },
-    { id: "tr13", name: "Reverso",                  url: "https://dictionary.reverso.net/english-spanish/%s" },
-    { id: "tr14", name: "Glosbe",                   url: "https://www.glosbe.com/en/es/%s" },
+    { id: "tr8",  name: "Sensagent",                url: "https://translation.sensagent.com/%s/en-es/" },
+    { id: "tr9",  name: "WordHippo Translator",     url: "https://www.wordhippo.com/what-is/the/spanish-word-for-%s.html" },
+    { id: "tr10", name: "DeepL",                    url: "https://www.deepl.com/translator#en/es/%s" },
+    { id: "tr11", name: "Translatero",              url: "https://www.translatero.com/english-spanish/translate/%s" },
+    { id: "tr12", name: "Reverso",                  url: "https://dictionary.reverso.net/english-spanish/%s" },
+    { id: "tr13", name: "Glosbe",                   url: "https://www.glosbe.com/en/es/%s" },
+    { id: "tr14", name: "Glosbe 2",                 url: "https://translate.glosbe.com/en-es/%s" },
 
-    { id: "tr15", name: "Glosbe 2",                 url: "https://translate.glosbe.com/en-es/%s" },
-    { id: "tr16", name: "WordReference",            url: "https://www.wordreference.com/enes/%s" },
-    { id: "tr17", name: "Leo",                      url: "https://dict.leo.org/spanish-english/%s" },
-    { id: "tr18", name: "Cambridge Translator",     url: "https://dictionary.cambridge.org/dictionary/english-spanish/%s" },
-    { id: "tr19", name: "Interglot",                url: "https://www.interglot.com/dictionary/en/es/search?q=%s" },
-    { id: "tr20", name: "bab.la",                   url: "https://en.bab.la/dictionary/english-spanish/%s" },
-    { id: "tr21", name: "dict.cc",                  url: "https://enes.dict.cc/?s=%s" },
+    { id: "tr15", name: "WordReference",            url: "https://www.wordreference.com/enes/%s" },
+    { id: "tr16", name: "Leo",                      url: "https://dict.leo.org/spanish-english/%s" },
+    { id: "tr17", name: "Cambridge Translator",     url: "https://dictionary.cambridge.org/dictionary/english-spanish/%s" },
+    { id: "tr18", name: "Interglot",                url: "https://www.interglot.com/dictionary/en/es/search?q=%s" },
+    { id: "tr19", name: "bab.la",                   url: "https://en.bab.la/dictionary/english-spanish/%s" },
+    { id: "tr20", name: "dict.cc",                  url: "https://enes.dict.cc/?s=%s" },
+    { id: "tr21", name: "Definitions.net",          url: "https://www.definitions.net/translate/%s/es" },
 
     { id: "tr22", name: "DuckDuckGo Translation",   url: "https://www.duckduckgo.com/?q=translate+%s+to+spanish&ia=web" },
     { id: "tr23", name: "Startpage Translation",    url: "https://www.startpage.com/do/search?query=translate%20%22%s%22%20to%20spanish" },
-    { id: "tr24", name: "Definitions.net",          url: "https://www.definitions.net/translate/%s/es" },
-    { id: "tr25", name: "Translate.com",            url: "https://www.translate.com/machine-translation#en/es/%s" },
-    { id: "tr26", name: "PONS",                     url: "https://en.pons.com/translate/english-spanish/%s" },
-    { id: "tr27", name: "SpanishDictionary",        url: "https://www.spanishdict.com/translate/%s" }
+    { id: "tr24", name: "PONS",                     url: "https://en.pons.com/translate/english-spanish/%s" },
+    { id: "tr25", name: "SpanishDictionary",        url: "https://www.spanishdict.com/translate/%s" }
   ];
 
   const photography = [
@@ -283,14 +284,13 @@ const DEFAULTS = (function () {
 
     { id: "p8",  name: "Skitterphoto",           url: "https://www.skitterphoto.com/photos/search/%s" },
     { id: "p9",  name: "PikWizard",              url: "https://www.pikwizard.com/s/photo/%s" },
-    { id: "p10", name: "Freepik",                url: "https://www.freepik.com/search?ai=excluded&format=search&last_filter=query&last_value=%s&query=eggs&selection=1&type=photo" },
+    { id: "p10", name: "Magnific",               url: "https://www.freepik.com/search?ai=excluded&format=search&last_filter=query&last_value=%s&query=eggs&selection=1&type=photo" },
     { id: "p11", name: "Vecteezy",               url: "https://www.vecteezy.com/free-photos/%s?license-free=true&is_ai_generated-not_ai_generated=true" },
-    { id: "p12", name: "LibreShot",              url: "https://www.libreshot.com/?s=%s" },
-    { id: "p13", name: "Rawpixel",               url: "https://www.rawpixel.com/search/%s?page=1&path=1522%7C%23notaigenerated%7C%24publicdomain%7Csearch_tl-34&sort=curated&tab=filters" },
-    { id: "p14", name: "Public Domain Pictures", url: "https://www.publicdomainpictures.net/en/hledej.php?hleda=%s&origin=people" },
+    { id: "p12", name: "Rawpixel",               url: "https://www.rawpixel.com/search/%s?page=1&path=1522%7C%23notaigenerated%7C%24publicdomain%7Csearch_tl-34&sort=curated&tab=filters" },
+    { id: "p13", name: "Public Domain Pictures", url: "https://www.publicdomainpictures.net/en/hledej.php?hleda=%s&origin=people" },
+    { id: "p14", name: "FocaStock",              url: "https://www.focastock.com/search?q=%s&type=photos" },
 
-    { id: "p15", name: "FocaStock",              url: "https://www.focastock.com/search?q=%s&type=photos" },
-    { id: "p16", name: "StockFreeImages",        url: "https://www.stockfreeimages.com/p1/%s.html" }
+    { id: "p15", name: "StockFreeImages",        url: "https://www.stockfreeimages.com/p1/%s.html" }
   ];
 
   const cooking = [
@@ -301,29 +301,30 @@ const DEFAULTS = (function () {
     { id: "c5", name: "Taste of Home",      url: "https://www.tasteofhome.com/?s=%s" },
     { id: "c6", name: "Delish",             url: "https://www.delish.com/search/?q=%s" },
     { id: "c7", name: "Epicurious",         url: "https://www.epicurious.com/search?q=%s" }
+
   ];
 
   const socialmedia = [
-    { id: "sm1",  name: "Reddit",              url: "https://www.reddit.com/search/?q=%s" },
-    { id: "sm2",  name: "Bluesky",             url: "https://www.bsky.app/search?q=%s" },
-    { id: "sm3",  name: "XCancel",             url: "https://www.xcancel.com/search?f=tweets&q=%s" },
-    { id: "sm4",  name: "Twitter",             url: "https://www.x.com/search?f=tweets&q=%s" },
-    { id: "sm5",  name: "Mastodon",            url: "https://www.mastodon.social/search?q=%25s&type=statuses" },
-    { id: "sm6",  name: "Minds",               url: "https://www.minds.com/search?q=%s&f=top&t=all" },
-    { id: "sm7",  name: "Substack",            url: "https://www.substack.com/search/%s" },
+    { id: "sm1",  name: "Reddit",      url: "https://www.reddit.com/search/?q=%s" },
+    { id: "sm2",  name: "Bluesky",     url: "https://bsky.app/search?q=%s" },
+    { id: "sm3",  name: "XCancel",     url: "https://www.xcancel.com/search?f=tweets&q=%s" },
+    { id: "sm4",  name: "Twitter",     url: "https://www.x.com/search?f=tweets&q=%s" },
+    { id: "sm5",  name: "Mastodon",    url: "https://mastodon.social/tags/%s" },
+    { id: "sm6",  name: "Minds",       url: "https://www.minds.com/search?q=%s&f=top&t=all" },
+    { id: "sm7",  name: "Substack",    url: "https://www.substack.com/search/%s" },
 
-    { id: "sm8",  name: "Tumblr",              url: "https://www.tumblr.com/search/%s" },
-    { id: "sm9",  name: "Facebook",            url: "https://www.facebook.com/search/top/?q=%s" },
-    { id: "sm10", name: "Instagram",           url: "https://www.instagram.com/explore/search/keyword/?q=%s" },
-    { id: "sm11", name: "Threads",             url: "https://www.threads.com/search?q=%s" },
-    { id: "sm12", name: "TikTok",              url: "https://www.tiktok.com/search/video?q=%s" },
-    { id: "sm13", name: "Lemon8",              url: "https://www.lemon8-app.com/discover/%s" },
-    { id: "sm14", name: "Snapchat",            url: "https://www.snapchat.com/explore/%s" },
+    { id: "sm8",  name: "Tumblr",      url: "https://www.tumblr.com/search/%s" },
+    { id: "sm9",  name: "Facebook",    url: "https://www.facebook.com/search/top/?q=%s" },
+    { id: "sm10", name: "Instagram",   url: "https://www.instagram.com/explore/search/keyword/?q=%s" },
+    { id: "sm11", name: "Threads",     url: "https://www.threads.com/search?q=%s" },
+    { id: "sm12", name: "TikTok",      url: "https://www.tiktok.com/search/video?q=%s" },
+    { id: "sm13", name: "Lemon8",      url: "https://www.lemon8-app.com/discover/%s" },
+    { id: "sm14", name: "Snapchat",    url: "https://www.snapchat.com/explore/%s" },
 
-    { id: "sm15", name: "Twitch",              url: "https://www.twitch.tv/search?term=%s" },
-    { id: "sm16", name: "Kick",                url: "https://www.kick.com/search?query=%s" },
-    { id: "sm17", name: "Hive.Blog",           url: "https://www.hive.blog/search?q=%s" },
-    { id: "sm18", name: "Lemmy.World",         url: "https://www.lemmy.world/search?q=%s&type=Posts&listingType=All&page=1&sort=TopAll&titleOnly=false" }
+    { id: "sm15", name: "Twitch",      url: "https://www.twitch.tv/search?term=%s" },
+    { id: "sm16", name: "Kick",        url: "https://www.kick.com/search?query=%s" },
+    { id: "sm17", name: "Hive.Blog",   url: "https://hive.blog/search?q=%s" },
+    { id: "sm18", name: "Lemmy.World", url: "https://lemmy.world/search?q=%s&type=Posts&listingType=All&page=1&sort=TopAll&titleOnly=false" }
   ];
 
   const moviestv = [
@@ -343,26 +344,26 @@ const DEFAULTS = (function () {
     { id: "mu5", name: "SoundCloud",                   url: "https://www.soundcloud.com/search?q=%s" },
     { id: "mu6", name: "Last.fm",                      url: "https://www.last.fm/search?q=%s" },
     { id: "mu7", name: "Bandcamp",                     url: "https://www.bandcamp.com/search?q=%s" }
+
   ];
 
   const ai = [
-    { id: "ai1",   name: "ChatGPT",        url: "https://www.chatgpt.com/?q=%s" },
-    { id: "ai2",   name: "Grok",           url: "https://www.grok.com/?q=%s" },
-    { id: "ai3",   name: "Brave AI",       url: "https://search.brave.com/ask?q=%s" },
-    { id: "ai4",   name: "Perplexity",     url: "https://www.perplexity.ai/search?q=%s" },
-    { id: "ai5",   name: "Yep AI",         url: "https://www.yep.com/chat/?q=%s" },
-    { id: "ai6",   name: "Mistral",        url: "https://chat.mistral.ai/chat?q=%s" },
-    { id: "ai7",   name: "HotBot",         url: "https://www.hotbot.com/web?q=%s" },
+    { id: "ai1",  name: "ChatGPT",     url: "https://www.chatgpt.com/?q=%s" },
+    { id: "ai2",  name: "Brave AI",    url: "https://search.brave.com/ask?q=%s" },
+    { id: "ai3",  name: "Mistral",     url: "https://chat.mistral.ai/chat?q=%s" },
+    { id: "ai4",  name: "Perplexity",  url: "https://www.perplexity.ai/search?q=%s" },
+    { id: "ai5",  name: "Yahoo Scout", url: "https://scout.yahoo.com/?q=%s" },
+    { id: "ai6",  name: "ThinkAny",    url: "https://thinkany.ai/search?q=%s" },
+    { id: "ai7",  name: "Yep AI",      url: "https://www.yep.com/chat/?q=%s" },
 
-    { id: "ai8",   name: "Claude.ai",      url: "https://www.claude.ai/new?q=%s" },
-    { id: "ai9",   name: "Yahoo Scout",    url: "https://scout.yahoo.com/?q=%s" },
-    { id: "ai10",  name: "Felo",           url: "https://www.felo.ai/search?q=%s" },
-    { id: "ai11",  name: "ThinkAny",       url: "https://www.thinkany.ai/search?q=%s" },
-    { id: "ai12",  name: "Andi",           url: "https://www.andisearch.com/?q=%s" },
-    { id: "ai13",  name: "Exa",            url: "https://www.exa.ai/search?q=%s" },
-    { id: "ai14",  name: "Consensus",      url: "https://www.consensus.app/results/?q=%s" },
+    { id: "ai8",  name: "Claude.ai",   url: "https://www.claude.ai/new?q=%s" },
+    { id: "ai9",  name: "You.com",     url: "https://www.you.com/search?q=%s" },
+    { id: "ai10", name: "Grok",        url: "https://www.grok.com/?q=%s" },
+    { id: "ai11", name: "Felo",        url: "https://www.felo.ai/search?q=%s" },
+    { id: "ai12", name: "Andi",        url: "https://www.andisearch.com/?q=%s" },
+    { id: "ai13", name: "Exa",         url: "https://www.exa.ai/search?q=%s" },
+    { id: "ai14", name: "Consensus",   url: "https://www.consensus.app/results/?q=%s" }
 
-    { id: "ai15",   name: "You.com",        url: "https://www.you.com/search?q=%s" }
   ];
 
   const jobs = [
@@ -393,7 +394,7 @@ const DEFAULTS = (function () {
     { id: "j22", name: "LocalJobs",         url: "https://www.localjobs.com/jobs?search=%s" },
     { id: "j23", name: "Lensa",             url: "https://www.lensa.com/talent/job-opportunities?job-title=%s" },
     { id: "j24", name: "Workable",          url: "https://jobs.workable.com/search?query=%s" },
-    { id: "j25", name: "Jobot",             url: "https://www.jobot.com/search?q=%s" },
+    { id: "j25", name: "Jobot",             url: "https://jobot.com/search?q=%s" },
     { id: "j26", name: "ReadySetHire",      url: "https://jobs.readysethire.com/search/results?q=%s" },
     { id: "j27", name: "JobLeads",          url: "https://www.jobleads.com/search/jobs?keywords=%s" },
     { id: "j28", name: "WeWorkRemotely",    url: "https://www.weworkremotely.com/remote-jobs/search?term=%s" },
@@ -402,62 +403,57 @@ const DEFAULTS = (function () {
   ];
 
   const scamscanners = [
-    { id: "sc1",  name: "ScamAdviser",            url: "https://www.scamadviser.com/check-website/%s" },
-    { id: "sc2",  name: "URLVoid",                url: "https://www.urlvoid.com/scan/%s" },
-    { id: "sc3",  name: "Scamy.io",               url: "https://www.scamy.io/?domain=%s" },
-    { id: "sc4",  name: "CheckPhish",             url: "https://app.checkphish.ai/live-scan?url=%s" },
-    { id: "sc5",  name: "GetSafeOnline",          url: "https://check.getsafeonline.org/check/%s" },
-    { id: "sc6",  name: "Sucuri",                 url: "https://sitecheck.sucuri.net/results/%s" },
-    { id: "sc7",  name: "Yima",                   url: "https://www.yima.org.za/scanresults?url=%s" },
+    { id: "sc1", name: "GetSafeOnline",   url: "https://check.getsafeonline.org/check/%s" },
+    { id: "sc2", name: "VirusTotal",      url: "https://www.virustotal.com/gui/search?query=http%3A%2F%2F%s" },
+    { id: "sc3", name: "Yima",            url: "https://www.yima.org.za/scanresults?url=%s" },
+    { id: "sc4", name: "eScamly",         url: "https://www.escamly.com/check-website/%s" },
+    { id: "sc5", name: "Email Veritas",   url: "https://www.emailveritas.com/url-checker/%s" },
+    { id: "sc6", name: "Is It Hacked?",   url: "https://www.isithacked.com/check/%s" },
+    { id: "sc7", name: "Sucuri",          url: "https://sitecheck.sucuri.net/results/%s" },
 
-    { id: "sc8",  name: "eScamly",                url: "https://www.escamly.com/check-website/%s" },
-    { id: "sc9",  name: "Is It Hacked?",          url: "https://www.isithacked.com/check/%s" },
-    { id: "sc10", name: "VirusTotal",             url: "https://www.virustotal.com/gui/search?query=http%3A%2F%2F%s" },
-    { id: "sc11", name: "Email Veritas",          url: "https://www.emailveritas.com/url-checker/%s" }
+    { id: "sc8", name: "ScamAdviser",     url: "https://www.scamadviser.com/check-website/%s" },
+    { id: "sc9", name: "URLVoid",         url: "https://www.urlvoid.com/scan/%s" }
   ];
 
   const misc = [
-    { id: "m1",  name: "Chrome Web Store",             url: "https://chromewebstore.google.com/search/%s" },
-    { id: "m2",  name: "Google Maps",                  url: "https://maps.google.com/?q=%s" },
-    { id: "m3",  name: "DDG Maps",                     url: "https://www.duckduckgo.com/?t=ffcm&q=%s&ia=web&iaxm=maps" },
-    { id: "m4",  name: "Internet Archive Search",      url: "https://www.archive.org/search.php?query=%s" },
-    { id: "m5",  name: "Wayback Machine",              url: "https://web.archive.org/web/20260000000000*/%s" },
-    { id: "m6",  name: "GoFundMe",                     url: "https://www.gofundme.com/s?q=%s" },
-    { id: "m7",  name: "Kickstarter",                  url: "https://www.kickstarter.com/discover/advanced?term=%s" },
+    { id: "m1",  name: "Chrome Web Store",          url: "https://chromewebstore.google.com/search/%s" },
+    { id: "m2",  name: "Google Maps",               url: "https://maps.google.com/?q=%s" },
+    { id: "m3",  name: "DDG Maps",                  url: "https://www.duckduckgo.com/?t=ffcm&q=%s&ia=web&iaxm=maps" },
+    { id: "m4",  name: "Internet Archive Search",   url: "https://www.archive.org/search.php?query=%s" },
+    { id: "m5",  name: "Wayback Machine",            url: "https://web.archive.org/web/20260000000000*/%s" },
+    { id: "m6",  name: "GoFundMe",                  url: "https://www.gofundme.com/s?q=%s" },
+    { id: "m7",  name: "Kickstarter",               url: "https://www.kickstarter.com/discover/advanced?term=%s" },
 
-    { id: "m8",  name: "Yelp",                         url: "https://www.yelp.com/search?find_desc=%s" },
-    { id: "m9",  name: "GitHub",                       url: "https://www.github.com/search?q=%s" },
-    { id: "m10", name: "GreasyFork",                   url: "https://www.greasyfork.org/en/scripts?q=%s" },
-    { id: "m11", name: "Shodan.io",                    url: "https://www.shodan.io/search?query=%s" },
-    { id: "m12", name: "Stack Overflow",               url: "https://www.stackoverflow.com/search?q=%s" },
-    { id: "m13", name: "Stack Exchange",               url: "https://www.stackexchange.com/search?q=%s" },
-    { id: "m14", name: "Stack Exchange (Math)",        url: "https://math.stackexchange.com/search?q=%s" },
+    { id: "m8",  name: "GitHub",                    url: "https://www.github.com/search?q=%s" },
+    { id: "m9",  name: "GreasyFork",                url: "https://www.greasyfork.org/en/scripts?q=%s" },
+    { id: "m10", name: "Shodan.io",                 url: "https://www.shodan.io/search?query=%s" },
+    { id: "m11", name: "Stack Overflow",            url: "https://www.stackoverflow.com/search?q=%s" },
+    { id: "m12", name: "Stack Exchange",            url: "https://www.stackexchange.com/search?q=%s" },
+    { id: "m13", name: "Stack Exchange (Math)",     url: "https://math.stackexchange.com/search?q=%s" },
+    { id: "m14", name: "RhymeZone",                 url: "https://www.rhymezone.com/r/rhyme.cgi?Word=%s" },
 
-    { id: "m15", name: "TripAdvisor",                  url: "https://www.tripadvisor.com/Search?q=%s" },
-    { id: "m16", name: "RhymeZone",                    url: "https://www.rhymezone.com/r/rhyme.cgi?Word=%s" },
-    { id: "m17", name: "Jisho",                        url: "https://www.jisho.org/search/%s" },
-    { id: "m18", name: "DeviantArt",                   url: "https://www.deviantart.com/search?q=%s" },
-    { id: "m19", name: "ArtStation",                   url: "https://www.artstation.com/search?sort_by=relevance&query=%s" }
+    { id: "m15", name: "Jisho",                    url: "https://www.jisho.org/search/%s" },
+    { id: "m16", name: "DeviantArt",                url: "https://www.deviantart.com/search?q=%s" },
+    { id: "m17", name: "ArtStation",                url: "https://www.artstation.com/search?sort_by=relevance&query=%s" }
   ];
+
 
   const page4 = [
-    { id: "pf1",  name: "Brave",                 url: "https://search.brave.com/search?q=%s&offset=3" },
-    { id: "pf2",  name: "Swisscows",             url: "https://www.swisscows.com/en/web?query=%s&offset=30" },
-    { id: "pf3",  name: "Yahoo Goodsearch",      url: "https://search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s&b=22" },
-    { id: "pf4",  name: "Ecosia",                url: "https://www.ecosia.org/search?q=%s&p=3" },
-    { id: "pf5",  name: "GiveWater",             url: "https://search.givewater.com/serp?q=%s&page=4" },
-    { id: "pf6",  name: "Mojeek",                url: "https://www.mojeek.com/search?q=%s&s=31" },
-    { id: "pf7",  name: "Norton Safe Search",    url: "https://www.nortonsafe.search.ask.com/web?page=4&q=%s" },
+    { id: "pf1",  name: "Brave",            url: "https://search.brave.com/search?q=%s&offset=3" },
+    { id: "pf2",  name: "Swisscows",        url: "https://www.swisscows.com/en/web?query=%s&offset=30" },
+    { id: "pf3",  name: "Yahoo Goodsearch", url: "https://search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s&b=22" },
+    { id: "pf4",  name: "Ecosia",           url: "https://www.ecosia.org/search?q=%s&p=3" },
+    { id: "pf5",  name: "GiveWater",        url: "https://search.givewater.com/serp?q=%s&page=4" },
+    { id: "pf6",  name: "Mojeek",           url: "https://www.mojeek.com/search?q=%s&s=31" },
+    { id: "pf7",  name: "Dogpile",          url: "https://www.dogpile.com/serp?q=%s&page=4" },
 
-    { id: "pf8",  name: "Google",                url: "https://www.google.com/search?q=%s&start=30" },
-    { id: "pf9",  name: "Bing",                  url: "https://www.bing.com/search?q=%s&lq=0&first=40" },
-    { id: "pf10", name: "Lukol",                 url: "https://www.lukol.com/s.php?q=%s#gsc.tab=0&gsc.q=lol&gsc.page=4" },
-    { id: "pf11", name: "Dogpile",               url: "https://www.dogpile.com/serp?q=%s&page=4" },
-    { id: "pf12", name: "Excite",                url: "https://results.excite.com/serp?q=%s&page=4" },
-    { id: "pf13", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s&page=4" },
-    { id: "pf14", name: "Yandex",                url: "https://www.yandex.com/search?text=%s&p=3" }
-    
+    { id: "pf8",  name: "Google",           url: "https://www.google.com/search?q=%s&start=30" },
+    { id: "pf9",  name: "Bing",             url: "https://www.bing.com/search?q=%s&lq=0&first=40" },
+    { id: "pf10", name: "Lukol",            url: "https://www.lukol.com/s.php?q=%s#gsc.tab=0&gsc.q=lol&gsc.page=4" },
+    { id: "pf11", name: "WebCrawler",       url: "https://www.webcrawler.com/serp?q=%s&page=4" },
+    { id: "pf12", name: "Yandex",           url: "https://www.yandex.com/search?text=%s&p=3" }
   ];
+
 
   return {
     frequentsites: { name: "Frequent Sites", engines: frequentsites, description: "Your most frequented websites, one click may be all you need right now" },
@@ -469,6 +465,7 @@ const DEFAULTS = (function () {
     books: { name: "Books, PDFs, Manuals", engines: books, description: "Find the book, or the PDF of a book, or any PDFs at all, from every library of books and PDFs, simultaneously" },
     news: { name: "News", engines: news, description: "Find the news article you're looking to read from every news link provider simultaneously" },
     shopping: { name: "Shopping", engines: shopping, description: "Find the best price by searching every shopping website simultaneously" },
+    reviews: { name: "Reviews (Food/Business)", engines: reviews, description: "Search reviews for restaurants or businesses on every review website simultaneously" },
     dictionaries: { name: "Dictionaries", engines: dictionaries, description: "Find the best explanation of a word by checking every dictionary online simultaneously" },
     thesauruses: { name: "Thesauruses", engines: thesauruses, description: "Find the word that best suits what you're trying to explain, with every thesaurus online simultaneously" },
     translators: { name: "Translators", engines: translators, description: "Check the translation of a word/sentence in another language using every translator simultaneously" },
@@ -480,7 +477,7 @@ const DEFAULTS = (function () {
     ai: { name: "AI Chatbots", engines: ai, description: "Get the answer to your weird question by sending your question to every AI chatbot simultaneously" },
     jobs: { name: "Jobs", engines: jobs, description: "Find the job you're looking for by searching every job search website simultaneously" },
     scamscanners: { name: "Scam Website Scanners", engines: scamscanners, description: "Test the validity of a website by sending the URL to every scam website scanner simultaneously (leave out https://)" },
-    misc: { name: "Media, Miscellaneous", engines: misc, description: "Niche options, more to provide you easier access to commonly used websites" },
+    misc: { name: "Miscellaneous", engines: misc, description: "Niche options, or concepts that don't have enough options to make their own group" },
     page4: { name: "Skip to Page 4", engines: page4, description: "This lets you skip past the common results to find the more obscure results you rarely see" }
   };
 })();
@@ -491,11 +488,12 @@ const DEFAULT_ENABLED_IDS = new Set([
   "v1","v2","v3","v4",
   "in1","in2","in3","in4","in5",
   "h1","h2","h3","h4","h5",
-  "b1","b2","b3","b4","b5",
+  "b1","b2","b3","b4","b5","b6",
   "n1","n2","n3","n4","n5",
   "s1","s2","s3","s4",
+  "r1","r2","r3","r4",
   "d1","d2","d3","d4",
-  "t1","t2","t3","t4","t5",
+  "t1","t2","t3","t5","t6",
   "tr1","tr3","tr4","tr6","tr7",
   "p1","p2","p3","p4","p5",
   "c1","c2","c3","c4","c5","c6","c7",
