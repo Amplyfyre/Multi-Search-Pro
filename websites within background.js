@@ -1,15 +1,15 @@
 // This is the list of websites inside the code of background.js, it is not the full code.
 // This is to keep up with the updated list of websites in case I have added new ones since you last downloaded it.
 // This list relates to the Chromium version, but the only difference with the Mozilla version is the browser extension page in Miscellaneous, as well as Frequent Sites. Copy the following over
-// 
-// { id: "m1",  name: "Mozilla Add-ons",              url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
+// { id: "fs12", name: "Mozilla Add-ons",     url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
+// { id: "m1",  name: "Mozilla Add-ons",           url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
 
 
 
 const DEFAULTS = (function () {
   const frequentsites = [
-    { id: "fs1",  name: "Startpage",           url: "https://www.startpage.com/do/search?query=%s" },
-    { id: "fs2",  name: "DuckDuckGo",          url: "https://www.duckduckgo.com/?q=%s" },
+    { id: "fs1",  name: "DuckDuckGo",          url: "https://www.duckduckgo.com/?q=%s" },
+    { id: "fs2",  name: "Startpage",           url: "https://www.startpage.com/do/search?query=%s" },
     { id: "fs3",  name: "Amazon",              url: "https://www.amazon.com/s?k=%s" },
     { id: "fs4",  name: "YouTube",             url: "https://www.youtube.com/results?search_query=%s" },
     { id: "fs5",  name: "Wikipedia",           url: "https://en.wikipedia.org/w/index.php?search=%s" },
@@ -421,7 +421,7 @@ const DEFAULTS = (function () {
     { id: "m2",  name: "Google Maps",               url: "https://maps.google.com/?q=%s" },
     { id: "m3",  name: "DDG Maps",                  url: "https://www.duckduckgo.com/?t=ffcm&q=%s&ia=web&iaxm=maps" },
     { id: "m4",  name: "Internet Archive Search",   url: "https://www.archive.org/search.php?query=%s" },
-    { id: "m5",  name: "Wayback Machine",            url: "https://web.archive.org/web/20260000000000*/%s" },
+    { id: "m5",  name: "Wayback Machine",           url: "https://web.archive.org/web/20260000000000*/%s" },
     { id: "m6",  name: "GoFundMe",                  url: "https://www.gofundme.com/s?q=%s" },
     { id: "m7",  name: "Kickstarter",               url: "https://www.kickstarter.com/discover/advanced?term=%s" },
 
@@ -433,7 +433,7 @@ const DEFAULTS = (function () {
     { id: "m13", name: "Stack Exchange (Math)",     url: "https://math.stackexchange.com/search?q=%s" },
     { id: "m14", name: "RhymeZone",                 url: "https://www.rhymezone.com/r/rhyme.cgi?Word=%s" },
 
-    { id: "m15", name: "Jisho",                    url: "https://www.jisho.org/search/%s" },
+    { id: "m15", name: "Jisho",                     url: "https://www.jisho.org/search/%s" },
     { id: "m16", name: "DeviantArt",                url: "https://www.deviantart.com/search?q=%s" },
     { id: "m17", name: "ArtStation",                url: "https://www.artstation.com/search?sort_by=relevance&query=%s" }
   ];
@@ -457,7 +457,7 @@ const DEFAULTS = (function () {
 
 
   return {
-    frequentsites: { name: "Frequent Sites", engines: frequentsites, description: "Your most frequented websites, one click may be all you need right now" },
+    frequentsites: { name: "Frequent Sites", engines: frequentsites, description: "Customize your most frequented websites, one click may be all you need right now" },
     general: { name: "General", engines: general, description: "Search multiple search engines simultaneously" },
     images: { name: "Images", engines: images, description: "Search every image search engine/website simultaneously" },
     videos: { name: "Videos", engines: videos, description: "Search every video upload website simultaneously" },
