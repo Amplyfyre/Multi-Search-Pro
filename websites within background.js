@@ -1,6 +1,6 @@
 // This is the list of websites inside the code of background.js, it is not the full code.
 // This is to keep up with the updated list of websites in case I have added new ones since you last downloaded it.
-// This list relates to the Chromium version, but the only difference with the Mozilla version is the browser extension page in Miscellaneous, as well as Frequent Sites. Copy the following over
+// This list relates to the Chromium version, but the only difference with the Mozilla version is the browser extension page in Frequent Sites and Miscellaneous.
 // { id: "fs12", name: "Mozilla Add-ons",     url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
 // { id: "m1",  name: "Mozilla Add-ons",           url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
 
