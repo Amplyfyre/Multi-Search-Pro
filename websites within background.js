@@ -5,7 +5,6 @@
 // { id: "m1",  name: "Mozilla Add-ons",           url: "https://addons.mozilla.org/en-US/firefox/search/?q=%s" },
 
 
-
 const DEFAULTS = (function () {
   const frequentsites = [
     { id: "fs1",  name: "DuckDuckGo",          url: "https://www.duckduckgo.com/?q=%s" },
@@ -355,16 +354,12 @@ const DEFAULTS = (function () {
     { id: "ai4",  name: "Perplexity",  url: "https://www.perplexity.ai/search?q=%s" },
     { id: "ai5",  name: "Yahoo Scout", url: "https://scout.yahoo.com/?q=%s" },
     { id: "ai6",  name: "ThinkAny",    url: "https://thinkany.ai/search?q=%s" },
-    { id: "ai7",  name: "Yep AI",      url: "https://www.yep.com/chat/?q=%s" },
+    { id: "ai7",  name: "Felo",        url: "https://www.felo.ai/search?q=%s" },
 
     { id: "ai8",  name: "Claude.ai",   url: "https://www.claude.ai/new?q=%s" },
-    { id: "ai9",  name: "You.com",     url: "https://www.you.com/search?q=%s" },
-    { id: "ai10", name: "Grok",        url: "https://www.grok.com/?q=%s" },
-    { id: "ai11", name: "Felo",        url: "https://www.felo.ai/search?q=%s" },
-    { id: "ai12", name: "Andi",        url: "https://www.andisearch.com/?q=%s" },
-    { id: "ai13", name: "Exa",         url: "https://www.exa.ai/search?q=%s" },
-    { id: "ai14", name: "Consensus",   url: "https://www.consensus.app/results/?q=%s" }
-
+    { id: "ai9",  name: "Grok",        url: "https://www.grok.com/?q=%s" },
+    { id: "ai10", name: "Andi",        url: "https://www.andisearch.com/?q=%s" },
+    { id: "ai11", name: "Consensus",   url: "https://www.consensus.app/results/?q=%s" }
   ];
 
   const jobs = [
