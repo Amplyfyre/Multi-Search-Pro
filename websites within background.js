@@ -32,7 +32,7 @@ const DEFAULTS = (function () {
     { id: "g4",  name: "Swisscows",             url: "https://www.swisscows.com/web?query=%s" },
     { id: "g5",  name: "Yep",                   url: "https://www.yep.com/web?q=%s" },
     { id: "g6",  name: "Mojeek",                url: "https://www.mojeek.com/search?q=%s" },
-    { id: "g7", name: "Becovi",                 url: "https://search.becovi.com/serp.php?q=%s&i=" },
+    { id: "g7",  name: "Becovi",                url: "https://search.becovi.com/serp.php?q=%s&i=" },
 
     { id: "g8",  name: "Yahoo Goodsearch",      url: "https://search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhst-goodsearch_yhs&p=%s" },
     { id: "g9",  name: "OceanHero",             url: "https://www.oceanhero.today/web?q=%s" },
@@ -40,7 +40,7 @@ const DEFAULTS = (function () {
     { id: "g11", name: "Lilo",                  url: "https://search.lilo.org/?q=%s" },
     { id: "g12", name: "Ekoru",                 url: "https://www.ekoru.org/?q=%s" },
     { id: "g13", name: "Rapusia",               url: "https://www.rapusia.org/?q=%s" },
-    { id: "g14", name: "GiveWater",             url: "https://search.givewater.com/serp?q=%s" },
+    { id: "g14", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
 
     { id: "g15", name: "Google",                url: "https://www.google.com/search?q=%s" },
     { id: "g16", name: "Bing",                  url: "https://www.bing.com/search?q=%s" },
@@ -52,9 +52,7 @@ const DEFAULTS = (function () {
 
     { id: "g22", name: "Entireweb",             url: "https://search.entireweb.com/search?q=%s" },
     { id: "g23", name: "Lycos",                 url: "https://www.lycos.com/search?kw=%s" },
-    { id: "g24", name: "WebCrawler",            url: "https://www.webcrawler.com/serp?q=%s" },
-    { id: "g25", name: "Norton Safe Search",    url: "https://nortonsafe.search.ask.com/web?q=%s" },
-    { id: "g26", name: "Excite",                url: "https://results.excite.com/serp?q=%s" }
+    { id: "g24", name: "Excite",                url: "https://results.excite.com/serp?q=%s" }
   ];
 
   const images = [
@@ -78,16 +76,15 @@ const DEFAULTS = (function () {
     { id: "im16", name: "OceanHero Img",          url: "https://www.oceanhero.today/images?q=%s" },
     { id: "im17", name: "Ecosia Img",             url: "https://www.ecosia.org/images?q=%s" },
     { id: "im18", name: "Lilo Img",               url: "https://search.lilo.org/?t=images&q=%s" },
-    { id: "im19", name: "GiveWater Img",          url: "https://search.givewater.com/serp?qc=images&q=%s" },
-    { id: "im20", name: "Sogou Img",              url: "https://pic.sogou.com/pics?query=%s" },
-    { id: "im21", name: "Baidu Img",              url: "https://image.baidu.com/search/index?tn=baiduimage&word=%s" },
+    { id: "im19", name: "Dogpile Img",            url: "https://www.dogpile.com/serp?qc=images&q=%s" },
+    { id: "im20", name: "Qwant Img",              url: "https://www.qwant.com/?q=%s&t=images" },
+    { id: "im21", name: "Yandex Img",             url: "https://www.yandex.com/images/search?text=%s" },
 
     { id: "im22", name: "Google Img",             url: "https://www.google.com/search?tbm=isch&q=%s" },
     { id: "im23", name: "Bing Img",               url: "https://www.bing.com/images/search?q=%s" },
-    { id: "im14", name: "Lukol Img",              url: "https://www.lukol.com/i.php?q=%s" },
-    { id: "im25", name: "Dogpile Img",            url: "https://www.dogpile.com/serp?qc=images&q=%s" },
-    { id: "im26", name: "Qwant Img",              url: "https://www.qwant.com/?q=%s&t=images" },
-    { id: "im27", name: "Yandex Img",             url: "https://www.yandex.com/images/search?text=%s" }
+    { id: "im24", name: "Lukol Img",              url: "https://www.lukol.com/i.php?q=%s" },
+    { id: "im25", name: "Sogou Img",              url: "https://pic.sogou.com/pics?query=%s" },
+    { id: "im26", name: "Baidu Img",              url: "https://image.baidu.com/search/index?tn=baiduimage&word=%s" }
   ];
 
   const videos = [
@@ -119,9 +116,9 @@ const DEFAULTS = (function () {
     { id: "v23", name: "OceanHero Vid",        url: "https://www.oceanhero.today/videos?q=%s" },
     { id: "v24", name: "Ecosia Vid",           url: "https://www.ecosia.org/videos?q=%s" },
     { id: "v25", name: "Lilo Vid",             url: "https://search.lilo.org/?t=videos&q=%s" },
-    { id: "v26", name: "GiveWater Vid",        url: "https://search.givewater.com/serp?qc=video&q=%s" },
-    { id: "v27", name: "Dogpile Vid",          url: "https://www.dogpile.com/serp?qc=video&q=%s" },
-    { id: "v28", name: "WebCrawler Vid",       url: "https://www.webcrawler.com/serp?qc=video&q=%s" }
+    { id: "v26", name: "Dogpile Vid",          url: "https://www.dogpile.com/serp?qc=video&q=%s" },
+    { id: "v27", name: "WebCrawler Vid",       url: "https://www.webcrawler.com/serp?qc=video&q=%s" }
+    
   ];
 
   const information = [
@@ -175,43 +172,43 @@ const DEFAULTS = (function () {
 
   const news = [
     { id: "n1",  name: "NPR",                    url: "https://www.npr.org/search?query=%s" },
-	  { id: "n2",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
-    { id: "n3",  name: "Ecosia News",            url: "https://www.ecosia.org/news?q=%s" },
-    { id: "n4",  name: "Lilo News",              url: "https://search.lilo.org/?t=news&q=%s&drawer=settings&locale=en_US" },
-    { id: "n5",  name: "OceanHero News",         url: "https://www.oceanhero.today/news?q=%s" },
-    { id: "n6",  name: "Dogpile News",           url: "https://www.dogpile.com/serp?qc=news&q=%s" },
-	  { id: "n7",  name: "NewsLibrary",            url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" },
+    { id: "n2", name: "Flipboard",               url: "https://flipboard.com/search/%s" },
+	  { id: "n3",  name: "Yahoo GoodSearch News",  url: "https://news.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+    { id: "n4",  name: "Ecosia News",            url: "https://www.ecosia.org/news?q=%s" },
+    { id: "n5",  name: "Lilo News",              url: "https://search.lilo.org/?t=news&q=%s&drawer=settings&locale=en_US" },
+    { id: "n6",  name: "OceanHero News",         url: "https://www.oceanhero.today/news?q=%s" },
+    { id: "n7",  name: "Dogpile News",           url: "https://www.dogpile.com/serp?qc=news&q=%s" },
 
     { id: "n8",  name: "DuckDuckGo News",        url: "https://www.duckduckgo.com/?q=%s&ia=news&iar=news" },
 	  { id: "n9",  name: "Google News",            url: "https://news.google.com/search?q=%s" },
     { id: "n10", name: "Associated Press",       url: "https://www.apnews.com/search?q=%s" },
     { id: "n11", name: "Reuters",                url: "https://www.reuters.com/site-search/?query=%s" },
-    { id: "n12", name: "Flipboard",              url: "https://flipboard.com/search/%s" }
+	  { id: "n12",  name: "NewsLibrary",           url: "https://www.newslibrary.com/newspapers?alltext=%s&sort=dsc" }
   ];
 
   const shopping = [
-    { id: "s1",  name: "Amazon",                url: "https://www.amazon.com/s?k=%s" },
-    { id: "s2",  name: "eBay",                  url: "https://www.ebay.com/sch/i.html?_nkw=%s" },
-    { id: "s3",  name: "Slickdeals",            url: "https://www.slickdeals.net/search?q=%s" },
-    { id: "s4",  name: "Etsy",                  url: "https://www.etsy.com/search?q=%s" },
-    { id: "s5",  name: "Target",                url: "https://www.target.com/s?searchTerm=%s" },
-    { id: "s6",  name: "Walmart",               url: "https://www.walmart.com/search/?query=%s" },
-    { id: "s7",  name: "Newegg",                url: "https://www.newegg.com/p/pl?d=%s" },
+    { id: "sh1",  name: "Amazon",                url: "https://www.amazon.com/s?k=%s" },
+    { id: "sh2",  name: "eBay",                  url: "https://www.ebay.com/sch/i.html?_nkw=%s" },
+    { id: "sh3",  name: "Slickdeals",            url: "https://www.slickdeals.net/search?q=%s" },
+    { id: "sh4",  name: "Etsy",                  url: "https://www.etsy.com/search?q=%s" },
+    { id: "sh5",  name: "Target",                url: "https://www.target.com/s?searchTerm=%s" },
+    { id: "sh6",  name: "Walmart",               url: "https://www.walmart.com/search/?query=%s" },
+    { id: "sh7",  name: "Newegg",                url: "https://www.newegg.com/p/pl?d=%s" },
 
-    { id: "s8",  name: "Yahoo Shopping",        url: "https://us.shopping.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
-    { id: "s9",  name: "Overstock",             url: "https://www.overstock.com/%s,/k,/results.html" },
-    { id: "s10", name: "PriceRunner",           url: "https://www.pricerunner.com/results?q=%s" },
-    { id: "s11", name: "OfferUp",               url: "https://www.offerup.com/search?q=%s" },
-    { id: "s12", name: "Price.com",             url: "https://www.price.com/search?query=%s" },
-    { id: "s13", name: "Shopping.com",          url: "https://www.shopping.com/search.html?keyword=%s" },
-    { id: "s14", name: "Banggood",              url: "https://www.banggood.com/search/%s.html" },
+    { id: "sh8",  name: "Yahoo Shopping",        url: "https://us.shopping.search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s" },
+    { id: "sh9",  name: "Overstock",             url: "https://www.overstock.com/%s,/k,/results.html" },
+    { id: "sh10", name: "PriceRunner",           url: "https://www.pricerunner.com/results?q=%s" },
+    { id: "sh11", name: "OfferUp",               url: "https://www.offerup.com/search?q=%s" },
+    { id: "sh12", name: "Price.com",             url: "https://www.price.com/search?query=%s" },
+    { id: "sh13", name: "Shopping.com",          url: "https://www.shopping.com/search.html?keyword=%s" },
+    { id: "sh14", name: "Banggood",              url: "https://www.banggood.com/search/%s.html" },
 
-    { id: "s15", name: "Google Shopping",       url: "https://www.google.com/search?tbm=shop&q=%s" },
-    { id: "s16", name: "Bing Shopping",         url: "https://www.bing.com/shop?q=%s" },
-    { id: "s17", name: "Become.com",            url: "https://www.become.com/%s/search" },
-    { id: "s18", name: "Price Pirates",         url: "https://www.pricepirates.com/?q=%s" },
-    { id: "s19", name: "Monoprice",             url: "https://www.monoprice.com/search/index?keyword=%s" },
-    { id: "s20", name: "Harbor Freight Tools",  url: "https://www.harborfreight.com/search?q=%s" }
+    { id: "sh15", name: "Google Shopping",       url: "https://www.google.com/search?tbm=shop&q=%s" },
+    { id: "sh16", name: "Bing Shopping",         url: "https://www.bing.com/shop?q=%s" },
+    { id: "sh17", name: "Become.com",            url: "https://www.become.com/%s/search" },
+    { id: "sh18", name: "Price Pirates",         url: "https://www.pricepirates.com/?q=%s" },
+    { id: "sh19", name: "Monoprice",             url: "https://www.monoprice.com/search/index?keyword=%s" },
+    { id: "sh20", name: "Harbor Freight Tools",  url: "https://www.harborfreight.com/search?q=%s" }
   ];
 
   const reviews = [
@@ -235,11 +232,11 @@ const DEFAULTS = (function () {
   ];
 
   const thesauruses = [
-    { id: "t1", name: "OneLook Thesaurus",     url: "https://www.onelook.com/thesaurus/?s=%s" },
-    { id: "t2", name: "Reverse Dictionary",    url: "https://www.reversedictionary.org/wordsfor/%s" },
-    { id: "t3", name: "Thesaurus.com",         url: "https://www.thesaurus.com/browse/%s" },
-    { id: "t4", name: "Power Thesaurus",       url: "https://www.powerthesaurus.org/%s" },
-    { id: "t5", name: "WordHippo Thesaurus",   url: "https://www.wordhippo.com/what-is/another-word-for/%s.html" }
+    { id: "th1", name: "OneLook Thesaurus",     url: "https://www.onelook.com/thesaurus/?s=%s" },
+    { id: "th2", name: "Reverse Dictionary",    url: "https://www.reversedictionary.org/wordsfor/%s" },
+    { id: "th3", name: "Thesaurus.com",         url: "https://www.thesaurus.com/browse/%s" },
+    { id: "th4", name: "Power Thesaurus",       url: "https://www.powerthesaurus.org/%s" },
+    { id: "th5", name: "WordHippo Thesaurus",   url: "https://www.wordhippo.com/what-is/another-word-for/%s.html" }
   ];
 
   const translators = [
@@ -347,19 +344,28 @@ const DEFAULTS = (function () {
 
   ];
 
-  const ai = [
-    { id: "ai1",  name: "ChatGPT",     url: "https://www.chatgpt.com/?q=%s" },
-    { id: "ai2",  name: "Brave AI",    url: "https://search.brave.com/ask?q=%s" },
-    { id: "ai3",  name: "Mistral",     url: "https://chat.mistral.ai/chat?q=%s" },
-    { id: "ai4",  name: "Perplexity",  url: "https://www.perplexity.ai/search?q=%s" },
-    { id: "ai5",  name: "Yahoo Scout", url: "https://scout.yahoo.com/?q=%s" },
-    { id: "ai6",  name: "ThinkAny",    url: "https://thinkany.ai/search?q=%s" },
-    { id: "ai7",  name: "Felo",        url: "https://www.felo.ai/search?q=%s" },
+  const gaming = [
+    { id: "gm1", name: "Steam",        url: "https://store.steampowered.com/search?term=%s" },
+    { id: "gm2", name: "Epic Games",   url: "https://store.epicgames.com/browse?q=%s" },
+    { id: "gm3", name: "GOG",          url: "https://www.gog.com/en/games?query=%s" },
+    { id: "gm4", name: "Ubisoft",      url: "https://www.ubisoft.com/en-us/search?gss-q=%s" },
+    { id: "gm5", name: "Itch.io",      url: "https://itch.io/search?q=%s" }
+  ];
 
-    { id: "ai8",  name: "Claude.ai",   url: "https://www.claude.ai/new?q=%s" },
-    { id: "ai9",  name: "Grok",        url: "https://www.grok.com/?q=%s" },
-    { id: "ai10", name: "Andi",        url: "https://www.andisearch.com/?q=%s" },
-    { id: "ai11", name: "Consensus",   url: "https://www.consensus.app/results/?q=%s" }
+  const ai = [
+    { id: "ai1",  name: "ChatGPT",       url: "https://www.chatgpt.com/?q=%s" },
+    { id: "ai2",  name: "Brave AI",      url: "https://search.brave.com/ask?q=%s" },
+    { id: "ai3",  name: "Perplexity",    url: "https://www.perplexity.ai/search?q=%s" },
+    { id: "ai4",  name: "Yahoo Scout",   url: "https://scout.yahoo.com/?q=%s" },
+    { id: "ai5",  name: "Andi",          url: "https://www.andisearch.com/?q=%s" },
+    { id: "ai6",  name: "Consensus",     url: "https://www.consensus.app/results/?q=%s" },
+    { id: "ai7",  name: "Felo",          url: "https://www.felo.ai/search?q=%s" },
+
+    { id: "ai8",  name: "Claude.ai",     url: "https://www.claude.ai/new?q=%s" },
+    { id: "ai9",  name: "Mistral",       url: "https://chat.mistral.ai/chat?q=%s" },
+    { id: "ai10", name: "Grok",          url: "https://www.grok.com/?q=%s" },
+    { id: "ai11", name: "HuggingFace",   url: "https://www.huggingface.co/chat/?q=%s" },
+    { id: "ai12", name: "ThinkAny",      url: "https://thinkany.ai/search?q=%s" }
   ];
 
   const jobs = [
@@ -439,15 +445,14 @@ const DEFAULTS = (function () {
     { id: "pf2",  name: "Swisscows",        url: "https://www.swisscows.com/en/web?query=%s&offset=30" },
     { id: "pf3",  name: "Yahoo Goodsearch", url: "https://search.yahoo.com/yhs/search?hspart=goodsearch&hsimp=yhs-goodsearch_yhs&p=%s&b=22" },
     { id: "pf4",  name: "Ecosia",           url: "https://www.ecosia.org/search?q=%s&p=3" },
-    { id: "pf5",  name: "GiveWater",        url: "https://search.givewater.com/serp?q=%s&page=4" },
-    { id: "pf6",  name: "Mojeek",           url: "https://www.mojeek.com/search?q=%s&s=31" },
-    { id: "pf7",  name: "Dogpile",          url: "https://www.dogpile.com/serp?q=%s&page=4" },
+    { id: "pf5",  name: "Mojeek",           url: "https://www.mojeek.com/search?q=%s&s=31" },
+    { id: "pf6",  name: "Dogpile",          url: "https://www.dogpile.com/serp?q=%s&page=4" },
+    { id: "pf7", name: "WebCrawler",        url: "https://www.webcrawler.com/serp?q=%s&page=4" },
 
     { id: "pf8",  name: "Google",           url: "https://www.google.com/search?q=%s&start=30" },
     { id: "pf9",  name: "Bing",             url: "https://www.bing.com/search?q=%s&lq=0&first=40" },
     { id: "pf10", name: "Lukol",            url: "https://www.lukol.com/s.php?q=%s#gsc.tab=0&gsc.q=lol&gsc.page=4" },
-    { id: "pf11", name: "WebCrawler",       url: "https://www.webcrawler.com/serp?q=%s&page=4" },
-    { id: "pf12", name: "Yandex",           url: "https://www.yandex.com/search?text=%s&p=3" }
+    { id: "pf11", name: "Yandex",           url: "https://www.yandex.com/search?text=%s&p=3" }
   ];
 
 
@@ -470,6 +475,7 @@ const DEFAULTS = (function () {
     socialmedia: { name: "Social Media & Blogs", engines: socialmedia, description: "See everyone's opinions on a hashtag by searching that hashtag on every social media website simultaneously" },
     moviestv: { name: "Movies & TV", engines: moviestv, description: "Search every cinema-related website simultaneously" },
     music: { name: "Music & Radio", engines: music, description: "Search every music and radio website simultaneously" },
+    gaming: { name: "Gaming", engines: gaming, description: "Find the best prices for games by searching every gaming platform simultaneouslyy" },
     ai: { name: "AI Chatbots", engines: ai, description: "Get the answer to your weird question by sending your question to every AI chatbot simultaneously" },
     jobs: { name: "Jobs", engines: jobs, description: "Find the job you're looking for by searching every job search website simultaneously" },
     scamscanners: { name: "Scam Website Scanners", engines: scamscanners, description: "Test the validity of a website by sending the URL to every scam website scanner simultaneously (leave out https://)" },
@@ -485,16 +491,17 @@ const DEFAULT_ENABLED_IDS = new Set([
   "in1","in2","in3","in4","in5",
   "h1","h2","h3","h4","h5",
   "b1","b2","b3","b4","b5","b6",
-  "n1","n2","n3","n4","n5",
-  "s1","s2","s3","s4",
+  "n1","n2","n3","n4","n5","n6",
+  "sh1","sh2","sh3","sh4",
   "r1","r2","r3","r4",
   "d1","d2","d3","d4",
-  "t1","t2","t3","t5","t6",
-  "tr1","tr3","tr4","tr6","tr7",
+  "th1","th2","th3","th5","th6",
+  "tr1","tr2","tr3","tr5","tr6",
   "p1","p2","p3","p4","p5",
   "c1","c2","c3","c4","c5","c6","c7",
   "sm1","sm2","sm3","sm5","sm6","sm7",
-  "ai1","ai2","ai3","ai4","ai5",
+  "gm1","gm2","gm3","gm4","gm5",
+  "ai1","ai2","ai3","ai4",
   "j1","j2","j3","j4","j5",
   "sc1","sc2","sc3","sc4","sc5",
   "pf1","pf2","pf3","pf4",
